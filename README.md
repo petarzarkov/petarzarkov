@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=petarzarkov&label=Profile%20views&color=0e75b6&style=flat" alt="petarzarkov" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=petarzarkov" alt="petarzarkov" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=petarzarkov&theme=onedark" alt="petarzarkov" /></a> </p>
 
 <p align="left"> <a href="https://twitter.com/flaeryw" target="blank"><img src="https://img.shields.io/twitter/follow/flaeryw?logo=twitter&style=for-the-badge" alt="flaeryw" /></a> </p>
 
