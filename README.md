@@ -7,9 +7,9 @@
 
 <p align="left"> <a href="https://twitter.com/flaeryw" target="blank"><img src="https://img.shields.io/twitter/follow/flaeryw?logo=twitter&style=for-the-badge" alt="flaeryw" /></a> </p>
 
-- 🔭 I’m currently working on [my portfolio](https://github.com/petarzarkov/portfolio)
+- 🔭 My portfolio [my portfolio](https://github.com/petarzarkov/portfolio)
 
-- 🌱 I’m currently learning **Flutter, Java**
+- 🌱 I’m currently learning **Flutter, Java, NestJS**
 
 - 👯 I’m looking to collaborate on [Awesome Vite.js](https://github.com/vitejs/awesome-vite)
 
