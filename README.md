@@ -7,7 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/flaeryw" target="blank"><img src="https://img.shields.io/twitter/follow/flaeryw?logo=twitter&style=for-the-badge" alt="flaeryw" /></a> </p>
 
-- 🔭 I’m currently working on [IANA Timezones]([https://derp.ai.petarzarkov.com/](https://github.com/petarzarkov/iana-timezones)
+- 🔭 I’m currently working on [IANA Timezones](https://github.com/petarzarkov/iana-timezones)
 
 - 👨‍💻 Check my portfolio [http://petarzarkov.com/](http://petarzarkov.com/)
 
