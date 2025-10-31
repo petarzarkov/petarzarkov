@@ -34,7 +34,6 @@
 </p>
 
 <h3>📊 My GitHub Stats</h3>
-<p align="center"><i>(These stats include my private contributions!)</i></p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=petarzarkov&show_icons=true&locale=en&count_private=true&theme=dark&cache_seconds=3600" alt="petarzarkov-stats" />
