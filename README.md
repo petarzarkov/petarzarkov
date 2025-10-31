@@ -34,8 +34,6 @@
 </p>
 
 <h3>📊 My GitHub Stats</h3>
-<p><i>(These stats include my private contributions!)</i></p>
-
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
