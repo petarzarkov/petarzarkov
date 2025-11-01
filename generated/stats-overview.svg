@@ -33,13 +33,13 @@
     <!-- Total Contributions -->
     <g transform="translate(25, 60)" class="slide-in">
       <text y="0" class="stat-label">Total Contributions</text>
-      <text y="22" class="stat-value">1,466</text>
+      <text y="22" class="stat-value">1,469</text>
     </g>
     
     <!-- Total Commits -->
     <g transform="translate(185, 60)" class="slide-in" style="animation-delay: 0.1s;">
       <text y="0" class="stat-label">Total Commits</text>
-      <text y="22" class="stat-value">629</text>
+      <text y="22" class="stat-value">632</text>
     </g>
     
     <!-- Total PRs -->
