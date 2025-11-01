@@ -48,6 +48,11 @@ export class GitHubAPIClient {
   async fetchAllStats(): Promise<GitHubStats> {
     console.log('📊 Fetching GitHub stats...');
 
+    // Calculate date range for last 365 days
+    const today = new Date();
+    const oneYearAgo = new Date(today);
+    oneYearAgo.setDate(today.getDate() - 365);
+
     const [userContributions, repos, user] = await Promise.all([
       this.fetchUserContributions(),
       this.fetchRepositories(),
@@ -62,6 +67,8 @@ export class GitHubAPIClient {
     return {
       username: this.username,
       userId: user.id,
+      periodStart: oneYearAgo.toISOString().split('T')[0],
+      periodEnd: today.toISOString().split('T')[0],
       totalCommits: userContributions.totalCommitContributions,
       totalPRs: userContributions.totalPullRequestContributions,
       totalIssues: userContributions.totalIssueContributions,

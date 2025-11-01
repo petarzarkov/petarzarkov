@@ -1,6 +1,8 @@
 export interface GitHubStats {
   username: string;
   userId: number;
+  periodStart: string;
+  periodEnd: string;
   totalCommits: number;
   totalPRs: number;
   totalIssues: number;

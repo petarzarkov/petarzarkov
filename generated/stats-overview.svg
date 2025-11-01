@@ -1,4 +1,4 @@
-<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="495" height="210" viewBox="0 0 495 210" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
     .stat-label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
@@ -25,49 +25,50 @@
 
   </style>
   
-  <rect x="0.5" y="0.5" width="494" height="194" rx="4.5" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="494" height="209" rx="4.5" fill="#0d1117" stroke="#30363d"/>
   
   <g class="fade-in">
     <text x="25" y="35" class="header">📊 GitHub Statistics</text>
+    <text x="25" y="52" class="stat-label">Period: Nov 1, 2024 - Nov 1, 2025</text>
     
     <!-- Total Contributions -->
-    <g transform="translate(25, 60)" class="slide-in">
+    <g transform="translate(25, 75)" class="slide-in">
       <text y="0" class="stat-label">Total Contributions</text>
       <text y="22" class="stat-value">1,470</text>
     </g>
     
     <!-- Total Commits -->
-    <g transform="translate(185, 60)" class="slide-in" style="animation-delay: 0.1s;">
+    <g transform="translate(185, 75)" class="slide-in" style="animation-delay: 0.1s;">
       <text y="0" class="stat-label">Total Commits</text>
       <text y="22" class="stat-value">633</text>
     </g>
     
     <!-- Total PRs -->
-    <g transform="translate(345, 60)" class="slide-in" style="animation-delay: 0.2s;">
+    <g transform="translate(345, 75)" class="slide-in" style="animation-delay: 0.2s;">
       <text y="0" class="stat-label">Pull Requests</text>
       <text y="22" class="stat-value">243</text>
     </g>
     
     <!-- Total Reviews -->
-    <g transform="translate(25, 115)" class="slide-in" style="animation-delay: 0.3s;">
+    <g transform="translate(25, 130)" class="slide-in" style="animation-delay: 0.3s;">
       <text y="0" class="stat-label">Code Reviews</text>
       <text y="22" class="stat-value">213</text>
     </g>
     
     <!-- Total Issues -->
-    <g transform="translate(185, 115)" class="slide-in" style="animation-delay: 0.4s;">
+    <g transform="translate(185, 130)" class="slide-in" style="animation-delay: 0.4s;">
       <text y="0" class="stat-label">Issues</text>
       <text y="22" class="stat-value">1</text>
     </g>
     
     <!-- Total Repos -->
-    <g transform="translate(345, 115)" class="slide-in" style="animation-delay: 0.5s;">
+    <g transform="translate(345, 130)" class="slide-in" style="animation-delay: 0.5s;">
       <text y="0" class="stat-label">Repositories</text>
       <text y="22" class="stat-value">46</text>
     </g>
     
     <!-- Streak Info -->
-    <g transform="translate(25, 165)">
+    <g transform="translate(25, 180)">
       <text y="0" class="stat-label">
         🔥 Current Streak: <tspan class="stat-value" fill="#58a6ff">13 days</tspan>
         <tspan dx="15">📈 Longest: <tspan class="stat-value">20 days</tspan></tspan>

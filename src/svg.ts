@@ -41,7 +41,7 @@ const ANIMATION = `
 
 export function generateStatsOverviewCard(stats: GitHubStats): string {
   const width = 495;
-  const height = 195;
+  const height = 210;
 
   return `
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,45 +65,46 @@ export function generateStatsOverviewCard(stats: GitHubStats): string {
   
   <g class="fade-in">
     <text x="25" y="35" class="header">📊 GitHub Statistics</text>
+    <text x="25" y="52" class="stat-label">Period: ${new Date(stats.periodStart).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} - ${new Date(stats.periodEnd).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</text>
     
     <!-- Total Contributions -->
-    <g transform="translate(25, 60)" class="slide-in">
+    <g transform="translate(25, 75)" class="slide-in">
       <text y="0" class="stat-label">Total Contributions</text>
       <text y="22" class="stat-value">${stats.streak.totalContributions.toLocaleString()}</text>
     </g>
     
     <!-- Total Commits -->
-    <g transform="translate(185, 60)" class="slide-in" style="animation-delay: 0.1s;">
+    <g transform="translate(185, 75)" class="slide-in" style="animation-delay: 0.1s;">
       <text y="0" class="stat-label">Total Commits</text>
       <text y="22" class="stat-value">${stats.totalCommits.toLocaleString()}</text>
     </g>
     
     <!-- Total PRs -->
-    <g transform="translate(345, 60)" class="slide-in" style="animation-delay: 0.2s;">
+    <g transform="translate(345, 75)" class="slide-in" style="animation-delay: 0.2s;">
       <text y="0" class="stat-label">Pull Requests</text>
       <text y="22" class="stat-value">${stats.totalPRs.toLocaleString()}</text>
     </g>
     
     <!-- Total Reviews -->
-    <g transform="translate(25, 115)" class="slide-in" style="animation-delay: 0.3s;">
+    <g transform="translate(25, 130)" class="slide-in" style="animation-delay: 0.3s;">
       <text y="0" class="stat-label">Code Reviews</text>
       <text y="22" class="stat-value">${stats.totalReviews.toLocaleString()}</text>
     </g>
     
     <!-- Total Issues -->
-    <g transform="translate(185, 115)" class="slide-in" style="animation-delay: 0.4s;">
+    <g transform="translate(185, 130)" class="slide-in" style="animation-delay: 0.4s;">
       <text y="0" class="stat-label">Issues</text>
       <text y="22" class="stat-value">${stats.totalIssues.toLocaleString()}</text>
     </g>
     
     <!-- Total Repos -->
-    <g transform="translate(345, 115)" class="slide-in" style="animation-delay: 0.5s;">
+    <g transform="translate(345, 130)" class="slide-in" style="animation-delay: 0.5s;">
       <text y="0" class="stat-label">Repositories</text>
       <text y="22" class="stat-value">${stats.totalRepos}</text>
     </g>
     
     <!-- Streak Info -->
-    <g transform="translate(25, 165)">
+    <g transform="translate(25, 180)">
       <text y="0" class="stat-label">
         🔥 Current Streak: <tspan class="stat-value" fill="${THEME.accent}">${
           stats.streak.currentStreak
