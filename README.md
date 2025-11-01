@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Petar Zarkov</h1>
+<h1 align="center">Hi, I'm Petar Zarkov</h1>
 <h3 align="center">A passionate software developer from Bulgaria</h3>
 
 <p align="left">
@@ -33,25 +33,15 @@
   </a>
 </p>
 
-<h3 align="center">🏆 GitHub Stats (only public)</h3>
-
+<!-- STATS:START -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=petarzarkov&theme=radical&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9" alt="petarzarkov-streak" />
+  <img src="generated/stats-overview.svg" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=petarzarkov&theme=radical" alt="petarzarkov-profile-details" />
+  <img src="generated/languages-activity.svg" alt="Languages and Activity" />
 </p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=petarzarkov&theme=radical" alt="petarzarkov-repos-per-language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=petarzarkov&theme=radical" alt="petarzarkov-most-commit-language" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=petarzarkov&theme=radical" alt="petarzarkov-stats-card" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=petarzarkov&theme=radical" alt="petarzarkov-productive-time" />
-</p>
+<!-- STATS:END -->
 
 <h3 align="left">🛠️ Languages and Tools:</h3>
 

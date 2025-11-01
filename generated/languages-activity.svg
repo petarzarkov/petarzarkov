@@ -1,0 +1,266 @@
+<svg width="495" height="500" viewBox="0 0 495 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
+    .lang-name { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
+    .lang-percent { font: 600 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
+    .heatmap-label { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
+    
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-10px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes growBar {
+    from { width: 0; }
+  }
+  
+  .fade-in { animation: fadeIn 0.6s ease-out; }
+  .slide-in { animation: slideIn 0.6s ease-out; }
+  .grow-bar { animation: growBar 1s ease-out; }
+
+  </style>
+  
+  <rect x="0.5" y="0.5" width="494" height="499" rx="4.5" fill="#0d1117" stroke="#30363d"/>
+  
+  <g class="fade-in">
+    <text x="25" y="35" class="header">💻 Top Languages</text>
+    
+    
+      <g transform="translate(25, 70)" class="slide-in" style="animation-delay: 0s;">
+        <circle cx="5" cy="-5" r="5" fill="#3178c6"/>
+        <text x="18" y="0" class="lang-name">TypeScript</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">92.9%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="343.7058759470434" height="4" rx="2" fill="#3178c6" class="grow-bar" style="animation-delay: 0s;"/>
+      </g>
+      <g transform="translate(25, 100)" class="slide-in" style="animation-delay: 0.1s;">
+        <circle cx="5" cy="-5" r="5" fill="#f34b7d"/>
+        <text x="18" y="0" class="lang-name">C++</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">3.6%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="13.348527512873567" height="4" rx="2" fill="#f34b7d" class="grow-bar" style="animation-delay: 0.1s;"/>
+      </g>
+      <g transform="translate(25, 130)" class="slide-in" style="animation-delay: 0.2s;">
+        <circle cx="5" cy="-5" r="5" fill="#00B4AB"/>
+        <text x="18" y="0" class="lang-name">Dart</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">2.6%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="9.745173384775741" height="4" rx="2" fill="#00B4AB" class="grow-bar" style="animation-delay: 0.2s;"/>
+      </g>
+      <g transform="translate(25, 160)" class="slide-in" style="animation-delay: 0.30000000000000004s;">
+        <circle cx="5" cy="-5" r="5" fill="#f1e05a"/>
+        <text x="18" y="0" class="lang-name">JavaScript</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">0.8%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="2.8435414365500398" height="4" rx="2" fill="#f1e05a" class="grow-bar" style="animation-delay: 0.30000000000000004s;"/>
+      </g>
+      <g transform="translate(25, 190)" class="slide-in" style="animation-delay: 0.4s;">
+        <circle cx="5" cy="-5" r="5" fill="#00ADD8"/>
+        <text x="18" y="0" class="lang-name">Go</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">0.1%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="0.2302462701659951" height="4" rx="2" fill="#00ADD8" class="grow-bar" style="animation-delay: 0.4s;"/>
+      </g>
+      <g transform="translate(25, 220)" class="slide-in" style="animation-delay: 0.5s;">
+        <circle cx="5" cy="-5" r="5" fill="#858585"/>
+        <text x="18" y="0" class="lang-name">Solidity</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">0.0%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="0.08058619455809829" height="4" rx="2" fill="#858585" class="grow-bar" style="animation-delay: 0.5s;"/>
+      </g>
+      <g transform="translate(25, 250)" class="slide-in" style="animation-delay: 0.6000000000000001s;">
+        <circle cx="5" cy="-5" r="5" fill="#3572A5"/>
+        <text x="18" y="0" class="lang-name">Python</text>
+        <text x="445" y="0" class="lang-percent" text-anchor="end">0.0%</text>
+        <rect x="18" y="5" width="370" height="4" rx="2" fill="#30363d"/>
+        <rect x="18" y="5" width="0.046049254033199025" height="4" rx="2" fill="#3572A5" class="grow-bar" style="animation-delay: 0.6000000000000001s;"/>
+      </g>
+    
+    <!-- Contribution Activity -->
+    <text x="25" y="330" class="header">📈 Contribution Activity (Last 12 Weeks)</text>
+    
+    <g transform="translate(25, 350)">
+      <rect x="0" y="0" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0s;">
+            <title>2025-08-10: 1 contributions</title>
+          </rect><rect x="0" y="13" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.01s;">
+            <title>2025-08-11: 8 contributions</title>
+          </rect><rect x="0" y="26" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.02s;">
+            <title>2025-08-12: 10 contributions</title>
+          </rect><rect x="0" y="39" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.03s;">
+            <title>2025-08-13: 8 contributions</title>
+          </rect><rect x="0" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.04s;">
+            <title>2025-08-14: 11 contributions</title>
+          </rect><rect x="0" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.05s;">
+            <title>2025-08-15: 10 contributions</title>
+          </rect><rect x="0" y="78" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.06s;">
+            <title>2025-08-16: 2 contributions</title>
+          </rect><rect x="13" y="0" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.07s;">
+            <title>2025-08-17: 9 contributions</title>
+          </rect><rect x="13" y="13" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.08s;">
+            <title>2025-08-18: 9 contributions</title>
+          </rect><rect x="13" y="26" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.09s;">
+            <title>2025-08-19: 12 contributions</title>
+          </rect><rect x="13" y="39" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.1s;">
+            <title>2025-08-20: 8 contributions</title>
+          </rect><rect x="13" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.11s;">
+            <title>2025-08-21: 14 contributions</title>
+          </rect><rect x="13" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.12s;">
+            <title>2025-08-22: 11 contributions</title>
+          </rect><rect x="13" y="78" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.13s;">
+            <title>2025-08-23: 1 contributions</title>
+          </rect><rect x="26" y="0" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.14s;">
+            <title>2025-08-24: 0 contributions</title>
+          </rect><rect x="26" y="13" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.15s;">
+            <title>2025-08-25: 2 contributions</title>
+          </rect><rect x="26" y="26" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.16s;">
+            <title>2025-08-26: 8 contributions</title>
+          </rect><rect x="26" y="39" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.17s;">
+            <title>2025-08-27: 14 contributions</title>
+          </rect><rect x="26" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.18s;">
+            <title>2025-08-28: 18 contributions</title>
+          </rect><rect x="26" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.19s;">
+            <title>2025-08-29: 13 contributions</title>
+          </rect><rect x="26" y="78" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.2s;">
+            <title>2025-08-30: 9 contributions</title>
+          </rect><rect x="39" y="0" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.21s;">
+            <title>2025-08-31: 10 contributions</title>
+          </rect><rect x="39" y="13" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.22s;">
+            <title>2025-09-01: 4 contributions</title>
+          </rect><rect x="39" y="26" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.23s;">
+            <title>2025-09-02: 4 contributions</title>
+          </rect><rect x="39" y="39" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.24s;">
+            <title>2025-09-03: 11 contributions</title>
+          </rect><rect x="39" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.25s;">
+            <title>2025-09-04: 12 contributions</title>
+          </rect><rect x="39" y="65" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.26s;">
+            <title>2025-09-05: 7 contributions</title>
+          </rect><rect x="39" y="78" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.27s;">
+            <title>2025-09-06: 4 contributions</title>
+          </rect><rect x="52" y="0" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.28s;">
+            <title>2025-09-07: 2 contributions</title>
+          </rect><rect x="52" y="13" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.29s;">
+            <title>2025-09-08: 2 contributions</title>
+          </rect><rect x="52" y="26" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.3s;">
+            <title>2025-09-09: 10 contributions</title>
+          </rect><rect x="52" y="39" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.31s;">
+            <title>2025-09-10: 12 contributions</title>
+          </rect><rect x="52" y="52" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.32s;">
+            <title>2025-09-11: 1 contributions</title>
+          </rect><rect x="52" y="65" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.33s;">
+            <title>2025-09-12: 1 contributions</title>
+          </rect><rect x="52" y="78" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.34s;">
+            <title>2025-09-13: 0 contributions</title>
+          </rect><rect x="65" y="0" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.35000000000000003s;">
+            <title>2025-09-14: 8 contributions</title>
+          </rect><rect x="65" y="13" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.36s;">
+            <title>2025-09-15: 8 contributions</title>
+          </rect><rect x="65" y="26" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.37s;">
+            <title>2025-09-16: 2 contributions</title>
+          </rect><rect x="65" y="39" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.38s;">
+            <title>2025-09-17: 1 contributions</title>
+          </rect><rect x="65" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.39s;">
+            <title>2025-09-18: 9 contributions</title>
+          </rect><rect x="65" y="65" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.4s;">
+            <title>2025-09-19: 4 contributions</title>
+          </rect><rect x="65" y="78" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.41000000000000003s;">
+            <title>2025-09-20: 2 contributions</title>
+          </rect><rect x="78" y="0" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.42s;">
+            <title>2025-09-21: 0 contributions</title>
+          </rect><rect x="78" y="13" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.43s;">
+            <title>2025-09-22: 1 contributions</title>
+          </rect><rect x="78" y="26" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.44s;">
+            <title>2025-09-23: 13 contributions</title>
+          </rect><rect x="78" y="39" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.45s;">
+            <title>2025-09-24: 4 contributions</title>
+          </rect><rect x="78" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.46s;">
+            <title>2025-09-25: 11 contributions</title>
+          </rect><rect x="78" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.47000000000000003s;">
+            <title>2025-09-26: 12 contributions</title>
+          </rect><rect x="78" y="78" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.48s;">
+            <title>2025-09-27: 0 contributions</title>
+          </rect><rect x="91" y="0" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.49s;">
+            <title>2025-09-28: 0 contributions</title>
+          </rect><rect x="91" y="13" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.5s;">
+            <title>2025-09-29: 1 contributions</title>
+          </rect><rect x="91" y="26" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.51s;">
+            <title>2025-09-30: 1 contributions</title>
+          </rect><rect x="91" y="39" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.52s;">
+            <title>2025-10-01: 3 contributions</title>
+          </rect><rect x="91" y="52" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.53s;">
+            <title>2025-10-02: 1 contributions</title>
+          </rect><rect x="91" y="65" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.54s;">
+            <title>2025-10-03: 6 contributions</title>
+          </rect><rect x="91" y="78" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.55s;">
+            <title>2025-10-04: 0 contributions</title>
+          </rect><rect x="104" y="0" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.56s;">
+            <title>2025-10-05: 0 contributions</title>
+          </rect><rect x="104" y="13" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.5700000000000001s;">
+            <title>2025-10-06: 6 contributions</title>
+          </rect><rect x="104" y="26" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.58s;">
+            <title>2025-10-07: 5 contributions</title>
+          </rect><rect x="104" y="39" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.59s;">
+            <title>2025-10-08: 1 contributions</title>
+          </rect><rect x="104" y="52" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.6s;">
+            <title>2025-10-09: 8 contributions</title>
+          </rect><rect x="104" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.61s;">
+            <title>2025-10-10: 12 contributions</title>
+          </rect><rect x="104" y="78" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.62s;">
+            <title>2025-10-11: 0 contributions</title>
+          </rect><rect x="117" y="0" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.63s;">
+            <title>2025-10-12: 0 contributions</title>
+          </rect><rect x="117" y="13" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.64s;">
+            <title>2025-10-13: 5 contributions</title>
+          </rect><rect x="117" y="26" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.65s;">
+            <title>2025-10-14: 10 contributions</title>
+          </rect><rect x="117" y="39" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.66s;">
+            <title>2025-10-15: 10 contributions</title>
+          </rect><rect x="117" y="52" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.67s;">
+            <title>2025-10-16: 6 contributions</title>
+          </rect><rect x="117" y="65" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.68s;">
+            <title>2025-10-17: 7 contributions</title>
+          </rect><rect x="117" y="78" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.6900000000000001s;">
+            <title>2025-10-18: 0 contributions</title>
+          </rect><rect x="130" y="0" width="10" height="10" rx="2" fill="#161b22" class="fade-in" style="animation-delay: 0.7000000000000001s;">
+            <title>2025-10-19: 0 contributions</title>
+          </rect><rect x="130" y="13" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.71s;">
+            <title>2025-10-20: 6 contributions</title>
+          </rect><rect x="130" y="26" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.72s;">
+            <title>2025-10-21: 1 contributions</title>
+          </rect><rect x="130" y="39" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.73s;">
+            <title>2025-10-22: 7 contributions</title>
+          </rect><rect x="130" y="52" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.74s;">
+            <title>2025-10-23: 10 contributions</title>
+          </rect><rect x="130" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.75s;">
+            <title>2025-10-24: 14 contributions</title>
+          </rect><rect x="130" y="78" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.76s;">
+            <title>2025-10-25: 3 contributions</title>
+          </rect><rect x="143" y="0" width="10" height="10" rx="2" fill="#006d32" class="fade-in" style="animation-delay: 0.77s;">
+            <title>2025-10-26: 5 contributions</title>
+          </rect><rect x="143" y="13" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.78s;">
+            <title>2025-10-27: 7 contributions</title>
+          </rect><rect x="143" y="26" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.79s;">
+            <title>2025-10-28: 14 contributions</title>
+          </rect><rect x="143" y="39" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.8s;">
+            <title>2025-10-29: 9 contributions</title>
+          </rect><rect x="143" y="52" width="10" height="10" rx="2" fill="#26a641" class="fade-in" style="animation-delay: 0.81s;">
+            <title>2025-10-30: 7 contributions</title>
+          </rect><rect x="143" y="65" width="10" height="10" rx="2" fill="#39d353" class="fade-in" style="animation-delay: 0.8200000000000001s;">
+            <title>2025-10-31: 17 contributions</title>
+          </rect><rect x="143" y="78" width="10" height="10" rx="2" fill="#0e4429" class="fade-in" style="animation-delay: 0.8300000000000001s;">
+            <title>2025-11-01: 2 contributions</title>
+          </rect>
+      
+      <!-- Legend -->
+      <g transform="translate(0, 114)">
+        <text x="0" y="10" class="heatmap-label">Less</text>
+        <rect x="40" y="0" width="10" height="10" rx="2" fill="#161b22"/><rect x="53" y="0" width="10" height="10" rx="2" fill="#0e4429"/><rect x="66" y="0" width="10" height="10" rx="2" fill="#006d32"/><rect x="79" y="0" width="10" height="10" rx="2" fill="#26a641"/><rect x="92" y="0" width="10" height="10" rx="2" fill="#39d353"/>
+        <text x="110" y="10" class="heatmap-label">More</text>
+      </g>
+    </g>
+  </g>
+</svg>
