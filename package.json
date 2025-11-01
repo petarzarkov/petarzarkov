@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --cache --fix",
     "format": "prettier --write --cache --ignore-unknown .",
-    "generate": "tsx --env-file .env src/main.ts",
+    "generate": "tsx src/main.ts",
+    "gen:dev": "tsx --env-file .env src/main.ts",
     "dev": "tsx --env-file .env watch src/main.ts",
     "debug": "tsx --env-file .env src/debug-contributions.ts",
     "gen:env:docs": "tsx src/gen-env-docs.ts"
