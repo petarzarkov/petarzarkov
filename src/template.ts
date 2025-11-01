@@ -1,3 +1,5 @@
+import type { GitHubStats } from './types.js';
+
 export function injectStatsIntoReadme(readmeContent: string): string {
   const statsSection = `<!-- STATS:START -->
 <p>
@@ -9,50 +11,59 @@ export function injectStatsIntoReadme(readmeContent: string): string {
 </p>
 <!-- STATS:END -->`;
 
+  // Add peepoHey after "Hi" in the title
+  const updatedContent = readmeContent.replace(
+    /(<h1[^>]*>Hi),\s*(I'm Petar Zarkov<\/h1>)/i,
+    `$1 <img src="public/webp/peepoHey.webp" alt="Hi" width="30" height="30" />, $2`,
+  );
+
   // Check if markers exist
   const startMarker = '<!-- STATS:START -->';
   const endMarker = '<!-- STATS:END -->';
 
   if (
-    readmeContent.includes(startMarker) &&
-    readmeContent.includes(endMarker)
+    updatedContent.includes(startMarker) &&
+    updatedContent.includes(endMarker)
   ) {
     // Replace content between markers
-    const startIndex = readmeContent.indexOf(startMarker);
-    const endIndex = readmeContent.indexOf(endMarker) + endMarker.length;
+    const startIndex = updatedContent.indexOf(startMarker);
+    const endIndex = updatedContent.indexOf(endMarker) + endMarker.length;
 
     return (
-      readmeContent.substring(0, startIndex) +
+      updatedContent.substring(0, startIndex) +
       statsSection +
-      readmeContent.substring(endIndex)
+      updatedContent.substring(endIndex)
     );
   } else {
     // Find the stats section and add markers
     const statsHeaderRegex = /<h3[^>]*>.*GitHub Stats.*<\/h3>/i;
-    const match = readmeContent.match(statsHeaderRegex);
+    const match = updatedContent.match(statsHeaderRegex);
 
     if (match) {
-      const headerIndex = readmeContent.indexOf(match[0]);
+      const headerIndex = updatedContent.indexOf(match[0]);
       const headerEnd = headerIndex + match[0].length;
 
       // Find the next h3 tag or end of file
-      const nextH3Index = readmeContent.indexOf('<h3', headerEnd);
-      const sectionEnd = nextH3Index > 0 ? nextH3Index : readmeContent.length;
+      const nextH3Index = updatedContent.indexOf('<h3', headerEnd);
+      const sectionEnd = nextH3Index > 0 ? nextH3Index : updatedContent.length;
 
       return (
-        readmeContent.substring(0, headerEnd) +
+        updatedContent.substring(0, headerEnd) +
         '\n\n' +
         statsSection +
         '\n\n' +
-        readmeContent.substring(sectionEnd)
+        updatedContent.substring(sectionEnd)
       );
     }
   }
 
-  return readmeContent;
+  return updatedContent;
 }
 
-export function generateIndexHTML(readmeContent: string): string {
+export function generateIndexHTML(
+  readmeContent: string,
+  stats: GitHubStats,
+): string {
   // Extract sections from README
   const titleMatch = readmeContent.match(/<h1[^>]*>(.*?)<\/h1>/);
   const title = titleMatch
@@ -75,6 +86,7 @@ export function generateIndexHTML(readmeContent: string): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="GitHub profile and statistics for Petar Zarkov">
+  <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/${stats.userId}?v=4">
   <title>${title}</title>
   <style>
     * {
@@ -227,7 +239,7 @@ export function generateIndexHTML(readmeContent: string): string {
 <body>
   <div class="container">
     <header>
-      <h1>${title}</h1>
+      <h1>Hi <img src="public/webp/peepoHey.webp" alt="Hi" width="30" height="30" style="vertical-align: middle;" />, I'm Petar Zarkov</h1>
       <p class="subtitle">A passionate software developer from Bulgaria</p>
     </header>
     

@@ -77,7 +77,7 @@ async function main() {
 
     if (existsSync(README_PATH)) {
       const readmeContent = await readFile(README_PATH, 'utf-8');
-      const indexHTML = generateIndexHTML(readmeContent);
+      const indexHTML = generateIndexHTML(readmeContent, stats);
       await writeFile(INDEX_PATH, indexHTML, 'utf-8');
       console.log('✅ index.html generated\n');
     } else {

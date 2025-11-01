@@ -61,6 +61,7 @@ export class GitHubAPIClient {
 
     return {
       username: this.username,
+      userId: user.id,
       totalCommits: userContributions.totalCommitContributions,
       totalPRs: userContributions.totalPullRequestContributions,
       totalIssues: userContributions.totalIssueContributions,

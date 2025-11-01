@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Petar Zarkov</h1>
+<h1 align="center">Hi <img src="public/webp/peepoHey.webp" alt="Hi" width="30" height="30" />, I'm Petar Zarkov</h1>
 <h3 align="center">A passionate software developer from Bulgaria</h3>
 
 <p align="left">

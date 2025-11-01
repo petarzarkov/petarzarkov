@@ -1,5 +1,6 @@
 export interface GitHubStats {
   username: string;
+  userId: number;
   totalCommits: number;
   totalPRs: number;
   totalIssues: number;
@@ -146,6 +147,7 @@ export interface OctokitRepository {
 }
 
 export interface OctokitUser {
+  id: number;
   public_repos: number;
   total_private_repos?: number;
 }
