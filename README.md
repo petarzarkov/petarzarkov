@@ -5,14 +5,9 @@
   <img src="https://komarev.com/ghpvc/?username=petarzarkov&label=Profile%20views&color=0e75b6&style=flat" alt="petarzarkov" />
 </p>
 
-<h3>⚡ About Me</h3>
-
-<ul>
-  <li>🔭 I’m currently working on <a href="https://github.com/petarzarkov/iana-timezones">IANA Timezones</a> and my <a href="https://github.com/petarzarkov/nestjs-template">NestJS monorepo template</a>.</li>
-  <li>🌱 I’m currently advancing my <strong>Cloud</strong> provider skills and diving deeper into <strong>NestJS</strong>.</li>
-  <li>💬 Ask me about <strong>React, NodeJS, Typescript,</strong> and <strong>Go</strong>.</li>
-  <li>👯 I’m open to collaborating on interesting open-source projects.</li>
-</ul>
+<a href="https://petarzarkov.github.io/petarzarkov/" target="blank">
+Check out the auto generated github pages from this repo
+</a>
 
 <h3 align="left">📬 Connect with Me:</h3>
 <p align="left">
@@ -34,12 +29,12 @@
 </p>
 
 <!-- STATS:START -->
-<p align="center">
-  <img src="generated/stats-overview.svg" alt="GitHub Stats" />
+<p>
+  <img src="generated/stats-overview.svg" alt="GitHub Stats" width="100%" />
 </p>
 
-<p align="center">
-  <img src="generated/languages-activity.svg" alt="Languages and Activity" />
+<p>
+  <img src="generated/languages-activity.svg" alt="Languages and Activity" width="100%" />
 </p>
 <!-- STATS:END -->
 

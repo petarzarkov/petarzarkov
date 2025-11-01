@@ -1,11 +1,11 @@
 export function injectStatsIntoReadme(readmeContent: string): string {
   const statsSection = `<!-- STATS:START -->
-<p align="center">
-  <img src="generated/stats-overview.svg" alt="GitHub Stats" />
+<p>
+  <img src="generated/stats-overview.svg" alt="GitHub Stats" width="100%" />
 </p>
 
-<p align="center">
-  <img src="generated/languages-activity.svg" alt="Languages and Activity" />
+<p>
+  <img src="generated/languages-activity.svg" alt="Languages and Activity" width="100%" />
 </p>
 <!-- STATS:END -->`;
 
