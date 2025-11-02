@@ -102,24 +102,6 @@ You can also:
 - **Manually trigger** the workflow from the Actions tab
 - **Automatic trigger** on pushes to `main` that affect `src/` or `package.json`
 
-## 📊 What Gets Generated
-
-### SVG Cards
-
-1. **`generated/stats-overview.svg`**
-   - Total contributions
-   - Total commits (public + private)
-   - Pull requests
-   - Issues
-   - Repositories
-   - Stars earned
-   - Current & longest streak
-
-2. **`generated/languages-activity.svg`**
-   - Top 8 programming languages with percentages
-   - Contribution heatmap (last 12 weeks)
-   - Visual activity patterns
-
 ### Updated Files
 
 - **`README.md`**: Stats section between `<!-- STATS:START -->` and `<!-- STATS:END -->` markers

@@ -64,6 +64,59 @@ export class GitHubAPIClient {
     const streak = this.calculateStreak(contributionGraph);
     const topRepos = this.getTopRepositories(repos);
 
+    // Calculate additional stats
+    const totalForks = repos.reduce(
+      (sum, repo) => sum + (repo.forks_count ?? 0),
+      0,
+    );
+
+    const totalActivity =
+      userContributions.totalCommitContributions +
+      userContributions.totalPullRequestContributions +
+      userContributions.totalPullRequestReviewContributions +
+      userContributions.totalIssueContributions;
+
+    const contributionPercentages = {
+      commits:
+        totalActivity > 0
+          ? Math.round(
+              (userContributions.totalCommitContributions / totalActivity) *
+                100,
+            )
+          : 0,
+      prs:
+        totalActivity > 0
+          ? Math.round(
+              (userContributions.totalPullRequestContributions /
+                totalActivity) *
+                100,
+            )
+          : 0,
+      reviews:
+        totalActivity > 0
+          ? Math.round(
+              (userContributions.totalPullRequestReviewContributions /
+                totalActivity) *
+                100,
+            )
+          : 0,
+      issues:
+        totalActivity > 0
+          ? Math.round(
+              (userContributions.totalIssueContributions / totalActivity) * 100,
+            )
+          : 0,
+    };
+
+    const avgCommitsPerDay =
+      contributionGraph.length > 0
+        ? Math.round(
+            (userContributions.totalCommitContributions /
+              contributionGraph.length) *
+              10,
+          ) / 10
+        : 0;
+
     return {
       username: this.username,
       userId: user.id,
@@ -75,14 +128,19 @@ export class GitHubAPIClient {
       totalReviews: userContributions.totalPullRequestReviewContributions,
       totalRepos: user.public_repos + (user.total_private_repos || 0),
       totalStars: repos.reduce(
-        (sum, repo) => sum + (repo.stargazers_count || 0),
+        (sum, repo) => sum + (repo.stargazers_count ?? 0),
         0,
       ),
+      totalForks,
       contributedTo: userContributions.totalRepositoriesWithContributedCommits,
+      followers: user.followers,
+      following: user.following,
       streak,
       languages,
       contributionGraph,
       topRepos,
+      avgCommitsPerDay,
+      contributionPercentages,
     };
   }
 

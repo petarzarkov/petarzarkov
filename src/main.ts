@@ -1,12 +1,9 @@
-import { readFile, writeFile, mkdir } from 'fs/promises';
+import { writeFile, mkdir } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import { GitHubAPIClient } from './api.js';
-import {
-  generateStatsOverviewCard,
-  generateLanguagesAndActivityCard,
-} from './svg.js';
-import { injectStatsIntoReadme, generateIndexHTML } from './template.js';
+import { generateStatsOverviewCard, generateLanguagesCard } from './svg.js';
+import { generateReadme, generateIndexHTML } from './templates/index.js';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME || 'petarzarkov';
@@ -43,7 +40,7 @@ async function main() {
     }
 
     const statsOverview = generateStatsOverviewCard(stats);
-    const languagesActivity = generateLanguagesAndActivityCard(stats);
+    const languagesCard = generateLanguagesCard(stats);
 
     await writeFile(
       join(GENERATED_DIR, 'stats-overview.svg'),
@@ -51,38 +48,28 @@ async function main() {
       'utf-8',
     );
     await writeFile(
-      join(GENERATED_DIR, 'languages-activity.svg'),
-      languagesActivity,
+      join(GENERATED_DIR, 'languages.svg'),
+      languagesCard,
       'utf-8',
     );
 
     console.log('  ✓ Generated stats-overview.svg');
-    console.log('  ✓ Generated languages-activity.svg');
+    console.log('  ✓ Generated languages.svg');
     console.log('✅ SVG cards generated\n');
 
-    // Step 3: Update README.md
-    console.log('📝 Step 3: Updating README.md...');
+    // Step 3: Generate README.md
+    console.log('📝 Step 3: Generating README.md...');
 
-    if (existsSync(README_PATH)) {
-      const readmeContent = await readFile(README_PATH, 'utf-8');
-      const updatedReadme = injectStatsIntoReadme(readmeContent);
-      await writeFile(README_PATH, updatedReadme, 'utf-8');
-      console.log('✅ README.md updated\n');
-    } else {
-      console.log('⚠️  README.md not found, skipping\n');
-    }
+    const readmeContent = generateReadme();
+    await writeFile(README_PATH, readmeContent, 'utf-8');
+    console.log('✅ README.md generated\n');
 
     // Step 4: Generate index.html
     console.log('🌐 Step 4: Generating index.html...');
 
-    if (existsSync(README_PATH)) {
-      const readmeContent = await readFile(README_PATH, 'utf-8');
-      const indexHTML = generateIndexHTML(readmeContent, stats);
-      await writeFile(INDEX_PATH, indexHTML, 'utf-8');
-      console.log('✅ index.html generated\n');
-    } else {
-      console.log('⚠️  Cannot generate index.html without README.md\n');
-    }
+    const indexHTML = generateIndexHTML(stats);
+    await writeFile(INDEX_PATH, indexHTML, 'utf-8');
+    console.log('✅ index.html generated\n');
 
     // Step 5: Summary
     console.log('🎉 GitHub Stats Factory completed successfully!\n');
@@ -95,7 +82,11 @@ async function main() {
     console.log(`   • Total Reviews: ${stats.totalReviews.toLocaleString()}`);
     console.log(`   • Total Issues: ${stats.totalIssues.toLocaleString()}`);
     console.log(`   • Total Repos: ${stats.totalRepos}`);
+    console.log(`   • Total Stars: ${stats.totalStars.toLocaleString()}`);
+    console.log(`   • Total Forks: ${stats.totalForks.toLocaleString()}`);
+    console.log(`   • Followers: ${stats.followers.toLocaleString()}`);
     console.log(`   • Current Streak: ${stats.streak.currentStreak} days`);
+    console.log(`   • Avg Commits/Day: ${stats.avgCommitsPerDay}`);
     console.log(
       `   • Top Language: ${
         stats.languages[0]?.name || 'N/A'

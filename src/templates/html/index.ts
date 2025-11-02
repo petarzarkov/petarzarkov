@@ -1,84 +1,14 @@
-import type { GitHubStats } from './types.js';
+import type { GitHubStats } from '../../types.js';
+import { socialLinks } from '../readme/connect.js';
 
-export function injectStatsIntoReadme(readmeContent: string): string {
-  const statsSection = `<!-- STATS:START -->
-<p>
-  <img src="generated/stats-overview.svg" alt="GitHub Stats" width="100%" />
-</p>
-
-<p>
-  <img src="generated/languages-activity.svg" alt="Languages and Activity" width="100%" />
-</p>
-<!-- STATS:END -->`;
-
-  // Add peepoHey after "Hi" in the title
-  const updatedContent = readmeContent.replace(
-    /(<h1[^>]*>Hi),\s*(I'm Petar Zarkov<\/h1>)/i,
-    `$1 <img src="public/webp/peepoHey.webp" alt="Hi" width="30" height="30" />, $2`,
-  );
-
-  // Check if markers exist
-  const startMarker = '<!-- STATS:START -->';
-  const endMarker = '<!-- STATS:END -->';
-
-  if (
-    updatedContent.includes(startMarker) &&
-    updatedContent.includes(endMarker)
-  ) {
-    // Replace content between markers
-    const startIndex = updatedContent.indexOf(startMarker);
-    const endIndex = updatedContent.indexOf(endMarker) + endMarker.length;
-
-    return (
-      updatedContent.substring(0, startIndex) +
-      statsSection +
-      updatedContent.substring(endIndex)
-    );
-  } else {
-    // Find the stats section and add markers
-    const statsHeaderRegex = /<h3[^>]*>.*GitHub Stats.*<\/h3>/i;
-    const match = updatedContent.match(statsHeaderRegex);
-
-    if (match) {
-      const headerIndex = updatedContent.indexOf(match[0]);
-      const headerEnd = headerIndex + match[0].length;
-
-      // Find the next h3 tag or end of file
-      const nextH3Index = updatedContent.indexOf('<h3', headerEnd);
-      const sectionEnd = nextH3Index > 0 ? nextH3Index : updatedContent.length;
-
-      return (
-        updatedContent.substring(0, headerEnd) +
-        '\n\n' +
-        statsSection +
-        '\n\n' +
-        updatedContent.substring(sectionEnd)
-      );
-    }
-  }
-
-  return updatedContent;
-}
-
-export function generateIndexHTML(
-  readmeContent: string,
-  stats: GitHubStats,
-): string {
-  // Extract sections from README
-  const titleMatch = readmeContent.match(/<h1[^>]*>(.*?)<\/h1>/);
-  const title = titleMatch
-    ? titleMatch[1].replace(/<[^>]*>/g, '').trim()
-    : 'GitHub Profile';
-
-  const aboutMatch = readmeContent.match(
-    /<h3>⚡ About Me<\/h3>([\s\S]*?)(?=<h3|$)/,
-  );
-  const aboutContent = aboutMatch ? aboutMatch[1].trim() : '';
-
-  const connectMatch = readmeContent.match(
-    /<h3[^>]*>📬 Connect with Me:<\/h3>([\s\S]*?)(?=<h3|$)/,
-  );
-  const connectContent = connectMatch ? connectMatch[1].trim() : '';
+export function generateIndexHTML(stats: GitHubStats): string {
+  const socialLinksHTML = socialLinks
+    .map(
+      link => `<a href="${link.url}" target="_blank">
+          <img src="${link.icon}" alt="${link.name}" height="40" />
+        </a>`,
+    )
+    .join('\n        ');
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -87,7 +17,7 @@ export function generateIndexHTML(
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="GitHub profile and statistics for Petar Zarkov">
   <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/${stats.userId}?v=4">
-  <title>${title}</title>
+  <title>Hi, I'm Petar Zarkov</title>
   <style>
     * {
       margin: 0;
@@ -127,12 +57,6 @@ export function generateIndexHTML(
       color: #c9d1d9;
     }
     
-    h3 {
-      font-size: 1.4em;
-      margin: 25px 0 15px 0;
-      color: #c9d1d9;
-    }
-    
     .subtitle {
       font-size: 1.2em;
       color: #8b949e;
@@ -158,20 +82,6 @@ export function generateIndexHTML(
       width: 100%;
       max-width: 800px;
       border-radius: 6px;
-    }
-    
-    .about ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    
-    .about li {
-      padding: 10px 0;
-      border-bottom: 1px solid #30363d;
-    }
-    
-    .about li:last-child {
-      border-bottom: none;
     }
     
     .connect {
@@ -244,29 +154,12 @@ export function generateIndexHTML(
     </header>
     
     <main>
-      ${
-        aboutContent
-          ? `
-      <section class="section about">
-        <h2>⚡ About Me</h2>
-        ${aboutContent}
-      </section>
-      `
-          : ''
-      }
-      
-      ${
-        connectContent
-          ? `
       <section class="section">
         <h2>📬 Connect with Me</h2>
         <div class="connect">
-          ${connectContent}
+          ${socialLinksHTML}
         </div>
       </section>
-      `
-          : ''
-      }
       
       <section class="section">
         <h2>📊 GitHub Statistics</h2>
@@ -277,7 +170,7 @@ export function generateIndexHTML(
         })} UTC</p>
         <div class="stats-container">
           <img src="generated/stats-overview.svg" alt="GitHub Statistics Overview" />
-          <img src="generated/languages-activity.svg" alt="Top Languages and Contribution Activity" />
+          <img src="generated/languages.svg" alt="Top Languages" />
         </div>
       </section>
     </main>

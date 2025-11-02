@@ -9,11 +9,21 @@ export interface GitHubStats {
   totalReviews: number;
   totalRepos: number;
   totalStars: number;
+  totalForks: number;
   contributedTo: number;
+  followers: number;
+  following: number;
   streak: StreakInfo;
   languages: LanguageStats[];
   contributionGraph: ContributionDay[];
   topRepos: RepoInfo[];
+  avgCommitsPerDay: number;
+  contributionPercentages: {
+    commits: number;
+    prs: number;
+    reviews: number;
+    issues: number;
+  };
 }
 
 export interface StreakInfo {
@@ -152,4 +162,6 @@ export interface OctokitUser {
   id: number;
   public_repos: number;
   total_private_repos?: number;
+  followers: number;
+  following: number;
 }
