@@ -29,7 +29,7 @@
   
   <g class="fade-in">
     <text x="25" y="35" class="header">📊 GitHub Statistics</text>
-    <text x="25" y="52" class="stat-label">Period: Nov 1, 2024 - Nov 1, 2025</text>
+    <text x="25" y="52" class="stat-label">Period: Nov 2, 2024 - Nov 2, 2025</text>
     
     <!-- Total Contributions -->
     <g transform="translate(25, 75)" class="slide-in">
