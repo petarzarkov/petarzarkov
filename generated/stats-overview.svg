@@ -52,7 +52,7 @@
   
   <g class="fade-in">
     <text x="25" y="35" class="header">📊 GitHub Stats</text>
-    <text x="25" y="54" class="subheader">Period: Nov 2, 2024 - Nov 2, 2025</text>
+    <text x="25" y="54" class="subheader">Period: Nov 3, 2024 - Nov 3, 2025</text>
   </g>
   
   <!-- Stats Grid -->
@@ -118,424 +118,424 @@
     <text x="25" y="260" class="stat-label">Last 12 Weeks Activity</text>
     
     <rect x="25" y="270" width="11" height="11" 
-          rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0s;">
-      <title>2025-08-11: 8 contributions</title>
-    </rect>
-    <rect x="25" y="284" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.005s;">
+          style="animation-delay: 0s;">
       <title>2025-08-12: 10 contributions</title>
     </rect>
-    <rect x="25" y="298" width="11" height="11" 
+    <rect x="25" y="284" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.01s;">
+          style="animation-delay: 0.005s;">
       <title>2025-08-13: 8 contributions</title>
+    </rect>
+    <rect x="25" y="298" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.01s;">
+      <title>2025-08-14: 11 contributions</title>
     </rect>
     <rect x="25" y="312" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.015s;">
-      <title>2025-08-14: 11 contributions</title>
-    </rect>
-    <rect x="25" y="326" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.02s;">
       <title>2025-08-15: 10 contributions</title>
     </rect>
-    <rect x="25" y="340" width="11" height="11" 
+    <rect x="25" y="326" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.025s;">
+          style="animation-delay: 0.02s;">
       <title>2025-08-16: 2 contributions</title>
+    </rect>
+    <rect x="25" y="340" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.025s;">
+      <title>2025-08-17: 9 contributions</title>
     </rect>
     <rect x="25" y="354" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.030000000000000002s;">
-      <title>2025-08-17: 9 contributions</title>
+      <title>2025-08-18: 9 contributions</title>
     </rect>
     <rect x="39" y="270" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.035s;">
-      <title>2025-08-18: 9 contributions</title>
-    </rect>
-    <rect x="39" y="284" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.04s;">
       <title>2025-08-19: 12 contributions</title>
     </rect>
-    <rect x="39" y="298" width="11" height="11" 
+    <rect x="39" y="284" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.045s;">
+          style="animation-delay: 0.04s;">
       <title>2025-08-20: 8 contributions</title>
+    </rect>
+    <rect x="39" y="298" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.045s;">
+      <title>2025-08-21: 14 contributions</title>
     </rect>
     <rect x="39" y="312" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.049999999999999996s;">
-      <title>2025-08-21: 14 contributions</title>
-    </rect>
-    <rect x="39" y="326" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.05499999999999999s;">
       <title>2025-08-22: 11 contributions</title>
     </rect>
-    <rect x="39" y="340" width="11" height="11" 
+    <rect x="39" y="326" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.05999999999999999s;">
+          style="animation-delay: 0.05499999999999999s;">
       <title>2025-08-23: 1 contributions</title>
     </rect>
-    <rect x="39" y="354" width="11" height="11" 
+    <rect x="39" y="340" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
-          style="animation-delay: 0.06499999999999999s;">
+          style="animation-delay: 0.05999999999999999s;">
       <title>2025-08-24: 0 contributions</title>
     </rect>
-    <rect x="53" y="270" width="11" height="11" 
+    <rect x="39" y="354" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.06999999999999999s;">
+          style="animation-delay: 0.06499999999999999s;">
       <title>2025-08-25: 2 contributions</title>
     </rect>
-    <rect x="53" y="284" width="11" height="11" 
+    <rect x="53" y="270" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.075s;">
+          style="animation-delay: 0.06999999999999999s;">
       <title>2025-08-26: 8 contributions</title>
+    </rect>
+    <rect x="53" y="284" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.075s;">
+      <title>2025-08-27: 14 contributions</title>
     </rect>
     <rect x="53" y="298" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.08s;">
-      <title>2025-08-27: 14 contributions</title>
+      <title>2025-08-28: 18 contributions</title>
     </rect>
     <rect x="53" y="312" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.085s;">
-      <title>2025-08-28: 18 contributions</title>
+      <title>2025-08-29: 13 contributions</title>
     </rect>
     <rect x="53" y="326" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.09000000000000001s;">
-      <title>2025-08-29: 13 contributions</title>
+      <title>2025-08-30: 9 contributions</title>
     </rect>
     <rect x="53" y="340" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.09500000000000001s;">
-      <title>2025-08-30: 9 contributions</title>
+      <title>2025-08-31: 10 contributions</title>
     </rect>
     <rect x="53" y="354" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
+          rx="2" fill="#006d32" class="pop-in" 
           style="animation-delay: 0.10000000000000002s;">
-      <title>2025-08-31: 10 contributions</title>
+      <title>2025-09-01: 4 contributions</title>
     </rect>
     <rect x="67" y="270" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
           style="animation-delay: 0.10500000000000002s;">
-      <title>2025-09-01: 4 contributions</title>
+      <title>2025-09-02: 4 contributions</title>
     </rect>
     <rect x="67" y="284" width="11" height="11" 
-          rx="2" fill="#006d32" class="pop-in" 
+          rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.11000000000000003s;">
-      <title>2025-09-02: 4 contributions</title>
+      <title>2025-09-03: 11 contributions</title>
     </rect>
     <rect x="67" y="298" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.11500000000000003s;">
-      <title>2025-09-03: 11 contributions</title>
-    </rect>
-    <rect x="67" y="312" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.12000000000000004s;">
       <title>2025-09-04: 12 contributions</title>
     </rect>
-    <rect x="67" y="326" width="11" height="11" 
+    <rect x="67" y="312" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.12500000000000003s;">
+          style="animation-delay: 0.12000000000000004s;">
       <title>2025-09-05: 7 contributions</title>
     </rect>
-    <rect x="67" y="340" width="11" height="11" 
+    <rect x="67" y="326" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.13000000000000003s;">
+          style="animation-delay: 0.12500000000000003s;">
       <title>2025-09-06: 4 contributions</title>
+    </rect>
+    <rect x="67" y="340" width="11" height="11" 
+          rx="2" fill="#0e4429" class="pop-in" 
+          style="animation-delay: 0.13000000000000003s;">
+      <title>2025-09-07: 2 contributions</title>
     </rect>
     <rect x="67" y="354" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.13500000000000004s;">
-      <title>2025-09-07: 2 contributions</title>
+      <title>2025-09-08: 2 contributions</title>
     </rect>
     <rect x="81" y="270" width="11" height="11" 
-          rx="2" fill="#0e4429" class="pop-in" 
+          rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.14000000000000004s;">
-      <title>2025-09-08: 2 contributions</title>
+      <title>2025-09-09: 10 contributions</title>
     </rect>
     <rect x="81" y="284" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.14500000000000005s;">
-      <title>2025-09-09: 10 contributions</title>
+      <title>2025-09-10: 12 contributions</title>
     </rect>
     <rect x="81" y="298" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
+          rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.15000000000000005s;">
-      <title>2025-09-10: 12 contributions</title>
+      <title>2025-09-11: 1 contributions</title>
     </rect>
     <rect x="81" y="312" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.15500000000000005s;">
-      <title>2025-09-11: 1 contributions</title>
-    </rect>
-    <rect x="81" y="326" width="11" height="11" 
-          rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.16000000000000006s;">
       <title>2025-09-12: 1 contributions</title>
     </rect>
-    <rect x="81" y="340" width="11" height="11" 
+    <rect x="81" y="326" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
-          style="animation-delay: 0.16500000000000006s;">
+          style="animation-delay: 0.16000000000000006s;">
       <title>2025-09-13: 0 contributions</title>
+    </rect>
+    <rect x="81" y="340" width="11" height="11" 
+          rx="2" fill="#26a641" class="pop-in" 
+          style="animation-delay: 0.16500000000000006s;">
+      <title>2025-09-14: 8 contributions</title>
     </rect>
     <rect x="81" y="354" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
           style="animation-delay: 0.17000000000000007s;">
-      <title>2025-09-14: 8 contributions</title>
+      <title>2025-09-15: 8 contributions</title>
     </rect>
     <rect x="95" y="270" width="11" height="11" 
-          rx="2" fill="#26a641" class="pop-in" 
+          rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.17500000000000007s;">
-      <title>2025-09-15: 8 contributions</title>
+      <title>2025-09-16: 2 contributions</title>
     </rect>
     <rect x="95" y="284" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.18000000000000008s;">
-      <title>2025-09-16: 2 contributions</title>
-    </rect>
-    <rect x="95" y="298" width="11" height="11" 
-          rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.18500000000000008s;">
       <title>2025-09-17: 1 contributions</title>
     </rect>
-    <rect x="95" y="312" width="11" height="11" 
+    <rect x="95" y="298" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.19000000000000009s;">
+          style="animation-delay: 0.18500000000000008s;">
       <title>2025-09-18: 9 contributions</title>
     </rect>
-    <rect x="95" y="326" width="11" height="11" 
+    <rect x="95" y="312" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.1950000000000001s;">
+          style="animation-delay: 0.19000000000000009s;">
       <title>2025-09-19: 4 contributions</title>
     </rect>
-    <rect x="95" y="340" width="11" height="11" 
+    <rect x="95" y="326" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.2000000000000001s;">
+          style="animation-delay: 0.1950000000000001s;">
       <title>2025-09-20: 2 contributions</title>
     </rect>
-    <rect x="95" y="354" width="11" height="11" 
+    <rect x="95" y="340" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
-          style="animation-delay: 0.2050000000000001s;">
+          style="animation-delay: 0.2000000000000001s;">
       <title>2025-09-21: 0 contributions</title>
     </rect>
-    <rect x="109" y="270" width="11" height="11" 
+    <rect x="95" y="354" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.2100000000000001s;">
+          style="animation-delay: 0.2050000000000001s;">
       <title>2025-09-22: 1 contributions</title>
     </rect>
-    <rect x="109" y="284" width="11" height="11" 
+    <rect x="109" y="270" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.2150000000000001s;">
+          style="animation-delay: 0.2100000000000001s;">
       <title>2025-09-23: 13 contributions</title>
     </rect>
-    <rect x="109" y="298" width="11" height="11" 
+    <rect x="109" y="284" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.2200000000000001s;">
+          style="animation-delay: 0.2150000000000001s;">
       <title>2025-09-24: 4 contributions</title>
+    </rect>
+    <rect x="109" y="298" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.2200000000000001s;">
+      <title>2025-09-25: 11 contributions</title>
     </rect>
     <rect x="109" y="312" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.22500000000000012s;">
-      <title>2025-09-25: 11 contributions</title>
+      <title>2025-09-26: 12 contributions</title>
     </rect>
     <rect x="109" y="326" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
+          rx="2" fill="#161b22" class="pop-in" 
           style="animation-delay: 0.23000000000000012s;">
-      <title>2025-09-26: 12 contributions</title>
+      <title>2025-09-27: 0 contributions</title>
     </rect>
     <rect x="109" y="340" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
           style="animation-delay: 0.23500000000000013s;">
-      <title>2025-09-27: 0 contributions</title>
+      <title>2025-09-28: 0 contributions</title>
     </rect>
     <rect x="109" y="354" width="11" height="11" 
-          rx="2" fill="#161b22" class="pop-in" 
+          rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.24000000000000013s;">
-      <title>2025-09-28: 0 contributions</title>
+      <title>2025-09-29: 1 contributions</title>
     </rect>
     <rect x="123" y="270" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
           style="animation-delay: 0.24500000000000013s;">
-      <title>2025-09-29: 1 contributions</title>
-    </rect>
-    <rect x="123" y="284" width="11" height="11" 
-          rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.2500000000000001s;">
       <title>2025-09-30: 1 contributions</title>
     </rect>
-    <rect x="123" y="298" width="11" height="11" 
+    <rect x="123" y="284" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.2550000000000001s;">
+          style="animation-delay: 0.2500000000000001s;">
       <title>2025-10-01: 3 contributions</title>
     </rect>
-    <rect x="123" y="312" width="11" height="11" 
+    <rect x="123" y="298" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.2600000000000001s;">
+          style="animation-delay: 0.2550000000000001s;">
       <title>2025-10-02: 1 contributions</title>
     </rect>
-    <rect x="123" y="326" width="11" height="11" 
+    <rect x="123" y="312" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.2650000000000001s;">
+          style="animation-delay: 0.2600000000000001s;">
       <title>2025-10-03: 6 contributions</title>
+    </rect>
+    <rect x="123" y="326" width="11" height="11" 
+          rx="2" fill="#161b22" class="pop-in" 
+          style="animation-delay: 0.2650000000000001s;">
+      <title>2025-10-04: 0 contributions</title>
     </rect>
     <rect x="123" y="340" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
           style="animation-delay: 0.27000000000000013s;">
-      <title>2025-10-04: 0 contributions</title>
-    </rect>
-    <rect x="123" y="354" width="11" height="11" 
-          rx="2" fill="#161b22" class="pop-in" 
-          style="animation-delay: 0.27500000000000013s;">
       <title>2025-10-05: 0 contributions</title>
     </rect>
-    <rect x="137" y="270" width="11" height="11" 
+    <rect x="123" y="354" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.28000000000000014s;">
+          style="animation-delay: 0.27500000000000013s;">
       <title>2025-10-06: 6 contributions</title>
     </rect>
-    <rect x="137" y="284" width="11" height="11" 
+    <rect x="137" y="270" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.28500000000000014s;">
+          style="animation-delay: 0.28000000000000014s;">
       <title>2025-10-07: 5 contributions</title>
     </rect>
-    <rect x="137" y="298" width="11" height="11" 
+    <rect x="137" y="284" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.29000000000000015s;">
+          style="animation-delay: 0.28500000000000014s;">
       <title>2025-10-08: 1 contributions</title>
     </rect>
-    <rect x="137" y="312" width="11" height="11" 
+    <rect x="137" y="298" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.29500000000000015s;">
+          style="animation-delay: 0.29000000000000015s;">
       <title>2025-10-09: 8 contributions</title>
     </rect>
-    <rect x="137" y="326" width="11" height="11" 
+    <rect x="137" y="312" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.30000000000000016s;">
+          style="animation-delay: 0.29500000000000015s;">
       <title>2025-10-10: 12 contributions</title>
+    </rect>
+    <rect x="137" y="326" width="11" height="11" 
+          rx="2" fill="#161b22" class="pop-in" 
+          style="animation-delay: 0.30000000000000016s;">
+      <title>2025-10-11: 0 contributions</title>
     </rect>
     <rect x="137" y="340" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
           style="animation-delay: 0.30500000000000016s;">
-      <title>2025-10-11: 0 contributions</title>
-    </rect>
-    <rect x="137" y="354" width="11" height="11" 
-          rx="2" fill="#161b22" class="pop-in" 
-          style="animation-delay: 0.31000000000000016s;">
       <title>2025-10-12: 0 contributions</title>
     </rect>
-    <rect x="151" y="270" width="11" height="11" 
+    <rect x="137" y="354" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.31500000000000017s;">
+          style="animation-delay: 0.31000000000000016s;">
       <title>2025-10-13: 5 contributions</title>
+    </rect>
+    <rect x="151" y="270" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.31500000000000017s;">
+      <title>2025-10-14: 10 contributions</title>
     </rect>
     <rect x="151" y="284" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.3200000000000002s;">
-      <title>2025-10-14: 10 contributions</title>
+      <title>2025-10-15: 10 contributions</title>
     </rect>
     <rect x="151" y="298" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
+          rx="2" fill="#26a641" class="pop-in" 
           style="animation-delay: 0.3250000000000002s;">
-      <title>2025-10-15: 10 contributions</title>
+      <title>2025-10-16: 6 contributions</title>
     </rect>
     <rect x="151" y="312" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
           style="animation-delay: 0.3300000000000002s;">
-      <title>2025-10-16: 6 contributions</title>
+      <title>2025-10-17: 7 contributions</title>
     </rect>
     <rect x="151" y="326" width="11" height="11" 
-          rx="2" fill="#26a641" class="pop-in" 
+          rx="2" fill="#161b22" class="pop-in" 
           style="animation-delay: 0.3350000000000002s;">
-      <title>2025-10-17: 7 contributions</title>
+      <title>2025-10-18: 0 contributions</title>
     </rect>
     <rect x="151" y="340" width="11" height="11" 
           rx="2" fill="#161b22" class="pop-in" 
           style="animation-delay: 0.3400000000000002s;">
-      <title>2025-10-18: 0 contributions</title>
-    </rect>
-    <rect x="151" y="354" width="11" height="11" 
-          rx="2" fill="#161b22" class="pop-in" 
-          style="animation-delay: 0.3450000000000002s;">
       <title>2025-10-19: 0 contributions</title>
     </rect>
-    <rect x="165" y="270" width="11" height="11" 
+    <rect x="151" y="354" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.3500000000000002s;">
+          style="animation-delay: 0.3450000000000002s;">
       <title>2025-10-20: 6 contributions</title>
     </rect>
-    <rect x="165" y="284" width="11" height="11" 
+    <rect x="165" y="270" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.3550000000000002s;">
+          style="animation-delay: 0.3500000000000002s;">
       <title>2025-10-21: 1 contributions</title>
     </rect>
-    <rect x="165" y="298" width="11" height="11" 
+    <rect x="165" y="284" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.3600000000000002s;">
+          style="animation-delay: 0.3550000000000002s;">
       <title>2025-10-22: 7 contributions</title>
+    </rect>
+    <rect x="165" y="298" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.3600000000000002s;">
+      <title>2025-10-23: 10 contributions</title>
     </rect>
     <rect x="165" y="312" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.3650000000000002s;">
-      <title>2025-10-23: 10 contributions</title>
+      <title>2025-10-24: 14 contributions</title>
     </rect>
     <rect x="165" y="326" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
+          rx="2" fill="#006d32" class="pop-in" 
           style="animation-delay: 0.3700000000000002s;">
-      <title>2025-10-24: 14 contributions</title>
+      <title>2025-10-25: 3 contributions</title>
     </rect>
     <rect x="165" y="340" width="11" height="11" 
           rx="2" fill="#006d32" class="pop-in" 
           style="animation-delay: 0.3750000000000002s;">
-      <title>2025-10-25: 3 contributions</title>
-    </rect>
-    <rect x="165" y="354" width="11" height="11" 
-          rx="2" fill="#006d32" class="pop-in" 
-          style="animation-delay: 0.3800000000000002s;">
       <title>2025-10-26: 5 contributions</title>
     </rect>
-    <rect x="179" y="270" width="11" height="11" 
+    <rect x="165" y="354" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.38500000000000023s;">
+          style="animation-delay: 0.3800000000000002s;">
       <title>2025-10-27: 7 contributions</title>
+    </rect>
+    <rect x="179" y="270" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.38500000000000023s;">
+      <title>2025-10-28: 14 contributions</title>
     </rect>
     <rect x="179" y="284" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.39000000000000024s;">
-      <title>2025-10-28: 14 contributions</title>
-    </rect>
-    <rect x="179" y="298" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.39500000000000024s;">
       <title>2025-10-29: 9 contributions</title>
     </rect>
-    <rect x="179" y="312" width="11" height="11" 
+    <rect x="179" y="298" width="11" height="11" 
           rx="2" fill="#26a641" class="pop-in" 
-          style="animation-delay: 0.40000000000000024s;">
+          style="animation-delay: 0.39500000000000024s;">
       <title>2025-10-30: 7 contributions</title>
+    </rect>
+    <rect x="179" y="312" width="11" height="11" 
+          rx="2" fill="#39d353" class="pop-in" 
+          style="animation-delay: 0.40000000000000024s;">
+      <title>2025-10-31: 17 contributions</title>
     </rect>
     <rect x="179" y="326" width="11" height="11" 
           rx="2" fill="#39d353" class="pop-in" 
           style="animation-delay: 0.40500000000000025s;">
-      <title>2025-10-31: 17 contributions</title>
-    </rect>
-    <rect x="179" y="340" width="11" height="11" 
-          rx="2" fill="#39d353" class="pop-in" 
-          style="animation-delay: 0.41000000000000025s;">
       <title>2025-11-01: 10 contributions</title>
     </rect>
-    <rect x="179" y="354" width="11" height="11" 
+    <rect x="179" y="340" width="11" height="11" 
           rx="2" fill="#0e4429" class="pop-in" 
-          style="animation-delay: 0.41500000000000026s;">
+          style="animation-delay: 0.41000000000000025s;">
       <title>2025-11-02: 2 contributions</title>
+    </rect>
+    <rect x="179" y="354" width="11" height="11" 
+          rx="2" fill="#161b22" class="pop-in" 
+          style="animation-delay: 0.41500000000000026s;">
+      <title>2025-11-03: 0 contributions</title>
     </rect>
     
     <!-- Legend -->
