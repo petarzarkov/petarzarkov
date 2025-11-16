@@ -14,7 +14,7 @@
     
     @keyframes grow-bar-0 {
       from { width: 0px; }
-      to { width: 631.84px; }
+      to { width: 631.53px; }
     }
     .bar-0 {
       animation: grow-bar-0 1s ease-out 0.1s forwards;
@@ -22,7 +22,7 @@
     }
     @keyframes grow-bar-1 {
       from { width: 0px; }
-      to { width: 24.45px; }
+      to { width: 24.44px; }
     }
     .bar-1 {
       animation: grow-bar-1 1s ease-out 0.18s forwards;
@@ -30,7 +30,7 @@
     }
     @keyframes grow-bar-2 {
       from { width: 0px; }
-      to { width: 17.85px; }
+      to { width: 17.84px; }
     }
     .bar-2 {
       animation: grow-bar-2 1s ease-out 0.26s forwards;
@@ -54,7 +54,7 @@
     }
     @keyframes grow-bar-5 {
       from { width: 0px; }
-      to { width: 0.15px; }
+      to { width: 0.34px; }
     }
     .bar-5 {
       animation: grow-bar-5 1s ease-out 0.5s forwards;
@@ -62,10 +62,18 @@
     }
     @keyframes grow-bar-6 {
       from { width: 0px; }
-      to { width: 0.08px; }
+      to { width: 0.15px; }
     }
     .bar-6 {
       animation: grow-bar-6 1s ease-out 0.58s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-7 {
+      from { width: 0px; }
+      to { width: 0.08px; }
+    }
+    .bar-7 {
+      animation: grow-bar-7 1s ease-out 0.66s forwards;
       width: 0;
     }
   </style>
@@ -82,7 +90,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="631.84" height="20" rx="10" fill="#3178c6" class="bar-0"/>
+      <rect y="0" width="631.53" height="20" rx="10" fill="#3178c6" class="bar-0"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">TypeScript</text>
@@ -93,7 +101,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="24.45" height="20" rx="10" fill="#f34b7d" class="bar-1"/>
+      <rect y="0" width="24.44" height="20" rx="10" fill="#f34b7d" class="bar-1"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">C++</text>
@@ -104,7 +112,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="17.85" height="20" rx="10" fill="#00B4AB" class="bar-2"/>
+      <rect y="0" width="17.84" height="20" rx="10" fill="#00B4AB" class="bar-2"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">Dart</text>
@@ -137,10 +145,10 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.15" height="20" rx="10" fill="#858585" class="bar-5"/>
+      <rect y="0" width="0.34" height="20" rx="10" fill="#dea584" class="bar-5"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Solidity</text>
+      <text y="15" x="10" class="lang-name">Rust</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
     </g>
     <g transform="translate(50, 255)">
@@ -148,7 +156,18 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.08" height="20" rx="10" fill="#3572A5" class="bar-6"/>
+      <rect y="0" width="0.15" height="20" rx="10" fill="#858585" class="bar-6"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Solidity</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 285)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.08" height="20" rx="10" fill="#3572A5" class="bar-7"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">Python</text>
