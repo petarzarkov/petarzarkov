@@ -14,7 +14,7 @@
     
     @keyframes grow-bar-0 {
       from { width: 0px; }
-      to { width: 603.65px; }
+      to { width: 610.16px; }
     }
     .bar-0 {
       animation: grow-bar-0 1s ease-out 0.1s forwards;
@@ -22,7 +22,7 @@
     }
     @keyframes grow-bar-1 {
       from { width: 0px; }
-      to { width: 70.95px; }
+      to { width: 64.89px; }
     }
     .bar-1 {
       animation: grow-bar-1 1s ease-out 0.18s forwards;
@@ -30,7 +30,7 @@
     }
     @keyframes grow-bar-2 {
       from { width: 0px; }
-      to { width: 2.74px; }
+      to { width: 2.51px; }
     }
     .bar-2 {
       animation: grow-bar-2 1s ease-out 0.26s forwards;
@@ -38,7 +38,7 @@
     }
     @keyframes grow-bar-3 {
       from { width: 0px; }
-      to { width: 2.00px; }
+      to { width: 1.83px; }
     }
     .bar-3 {
       animation: grow-bar-3 1s ease-out 0.33999999999999997s forwards;
@@ -46,7 +46,7 @@
     }
     @keyframes grow-bar-4 {
       from { width: 0px; }
-      to { width: 0.58px; }
+      to { width: 0.53px; }
     }
     .bar-4 {
       animation: grow-bar-4 1s ease-out 0.42000000000000004s forwards;
@@ -54,7 +54,7 @@
     }
     @keyframes grow-bar-5 {
       from { width: 0px; }
-      to { width: 0.05px; }
+      to { width: 0.04px; }
     }
     .bar-5 {
       animation: grow-bar-5 1s ease-out 0.5s forwards;
@@ -90,29 +90,29 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="603.65" height="20" rx="10" fill="#dea584" class="bar-0"/>
+      <rect y="0" width="610.16" height="20" rx="10" fill="#dea584" class="bar-0"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">Rust</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">88.8%</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">89.7%</text>
     </g>
     <g transform="translate(50, 105)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="70.95" height="20" rx="10" fill="#3178c6" class="bar-1"/>
+      <rect y="0" width="64.89" height="20" rx="10" fill="#3178c6" class="bar-1"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">TypeScript</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">10.4%</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">9.5%</text>
     </g>
     <g transform="translate(50, 135)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="2.74" height="20" rx="10" fill="#f34b7d" class="bar-2"/>
+      <rect y="0" width="2.51" height="20" rx="10" fill="#f34b7d" class="bar-2"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">C++</text>
@@ -123,7 +123,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="2.00" height="20" rx="10" fill="#00B4AB" class="bar-3"/>
+      <rect y="0" width="1.83" height="20" rx="10" fill="#00B4AB" class="bar-3"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">Dart</text>
@@ -134,7 +134,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.58" height="20" rx="10" fill="#f1e05a" class="bar-4"/>
+      <rect y="0" width="0.53" height="20" rx="10" fill="#f1e05a" class="bar-4"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">JavaScript</text>
@@ -145,7 +145,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.05" height="20" rx="10" fill="#00ADD8" class="bar-5"/>
+      <rect y="0" width="0.04" height="20" rx="10" fill="#00ADD8" class="bar-5"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">Go</text>
