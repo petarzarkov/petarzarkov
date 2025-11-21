@@ -51,12 +51,12 @@ const ENHANCED_ANIMATIONS = `
     100% { transform: scale(1); opacity: 1; }
   }
   
-  .fade-in { animation: fadeIn 0.8s ease-out; }
-  .slide-in-left { animation: slideInLeft 0.8s ease-out; }
-  .slide-in-up { animation: slideInUp 0.8s ease-out; }
-  .grow-bar { animation: growBar 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
-  .pulse { animation: pulse 2s ease-in-out infinite; }
-  .pop-in { animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .fade-in { animation: fadeIn 1.6s ease-out; }
+  .slide-in-left { animation: slideInLeft 1.6s ease-out; }
+  .slide-in-up { animation: slideInUp 1.6s ease-out; }
+  .grow-bar { animation: growBar 2.4s cubic-bezier(0.4, 0, 0.2, 1); }
+  .pulse { animation: pulse 3s ease-in-out infinite; }
+  .pop-in { animation: popIn 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 `;
 
 export function generateStatsOverviewCard(stats: GitHubStats): string {
@@ -94,7 +94,7 @@ export function generateStatsOverviewCard(stats: GitHubStats): string {
           style="animation-delay: ${animationDelay}s;">
       <title>${day.date}: ${day.count} contributions</title>
     </rect>`;
-      animationDelay += 0.005;
+      animationDelay += 0.01;
     });
   });
 
@@ -126,49 +126,49 @@ export function generateStatsOverviewCard(stats: GitHubStats): string {
       <text y="24" class="stat-value">${stats.streak.totalContributions.toLocaleString()}</text>
     </g>
     
-    <g transform="translate(200, 85)" class="slide-in-left" style="animation-delay: 0.1s;">
+    <g transform="translate(200, 85)" class="slide-in-left" style="animation-delay: 0.2s;">
       <text y="0" class="stat-label">Commits</text>
       <text y="24" class="stat-value">${stats.totalCommits.toLocaleString()}</text>
       <text y="42" class="stat-label">${stats.contributionPercentages.commits}% of activity</text>
     </g>
     
-    <g transform="translate(370, 85)" class="slide-in-left" style="animation-delay: 0.15s;">
+    <g transform="translate(370, 85)" class="slide-in-left" style="animation-delay: 0.3s;">
       <text y="0" class="stat-label">Pull Requests</text>
       <text y="24" class="stat-value">${stats.totalPRs.toLocaleString()}</text>
       <text y="42" class="stat-label">${stats.contributionPercentages.prs}% of activity</text>
     </g>
     
-    <g transform="translate(540, 85)" class="slide-in-left" style="animation-delay: 0.2s;">
+    <g transform="translate(540, 85)" class="slide-in-left" style="animation-delay: 0.4s;">
       <text y="0" class="stat-label">Code Reviews</text>
       <text y="24" class="stat-value">${stats.totalReviews.toLocaleString()}</text>
       <text y="42" class="stat-label">${stats.contributionPercentages.reviews}% of activity</text>
     </g>
     
     <!-- Row 2 -->
-    <g transform="translate(25, 160)" class="slide-in-left" style="animation-delay: 0.25s;">
+    <g transform="translate(25, 160)" class="slide-in-left" style="animation-delay: 0.5s;">
       <text y="0" class="stat-label">Issues</text>
       <text y="24" class="stat-value">${stats.totalIssues.toLocaleString()}</text>
       <text y="42" class="stat-label">${stats.contributionPercentages.issues}% of activity</text>
     </g>
     
-    <g transform="translate(200, 160)" class="slide-in-left" style="animation-delay: 0.3s;">
+    <g transform="translate(200, 160)" class="slide-in-left" style="animation-delay: 0.6s;">
       <text y="0" class="stat-label">Repositories</text>
       <text y="24" class="stat-value">${stats.totalRepos}</text>
     </g>
     
-    <g transform="translate(370, 160)" class="slide-in-left" style="animation-delay: 0.35s;">
+    <g transform="translate(370, 160)" class="slide-in-left" style="animation-delay: 0.7s;">
       <text y="0" class="stat-label">Total Stars</text>
       <text y="24" class="stat-value">${stats.totalStars.toLocaleString()}</text>
     </g>
     
-    <g transform="translate(540, 160)" class="slide-in-left" style="animation-delay: 0.4s;">
+    <g transform="translate(540, 160)" class="slide-in-left" style="animation-delay: 0.8s;">
       <text y="0" class="stat-label">Total Forks</text>
       <text y="24" class="stat-value">${stats.totalForks.toLocaleString()}</text>
     </g>
   </g>
   
   <!-- Streak Info -->
-  <g transform="translate(25, 230)" class="slide-in-up" style="animation-delay: 0.5s;">
+  <g transform="translate(25, 230)" class="slide-in-up" style="animation-delay: 1s;">
     <text y="0" class="stat-label">
       🔥 Current Streak: <tspan class="stat-value-small pulse" fill="${THEME.warning}">${stats.streak.currentStreak} days</tspan>
       <tspan dx="20">📈 Longest: <tspan class="stat-value-small" fill="${THEME.success}">${stats.streak.longestStreak} days</tspan></tspan>
@@ -177,7 +177,7 @@ export function generateStatsOverviewCard(stats: GitHubStats): string {
   </g>
   
   <!-- Contribution Heatmap -->
-  <g class="fade-in" style="animation-delay: 0.6s;">
+  <g class="fade-in" style="animation-delay: 1.2s;">
     <text x="25" y="${heatmapStartY - 10}" class="stat-label">Last 12 Weeks Activity</text>
     ${heatmapSVG}
     
@@ -194,7 +194,7 @@ export function generateStatsOverviewCard(stats: GitHubStats): string {
   </g>
   
   <!-- Footer Stats -->
-  <g transform="translate(520, ${heatmapStartY + 50})" class="slide-in-up" style="animation-delay: 0.7s;">
+  <g transform="translate(520, ${heatmapStartY + 50})" class="slide-in-up" style="animation-delay: 1.4s;">
     <text y="0" class="stat-label">Contributed to</text>
     <text y="20" class="stat-value-small">${stats.contributedTo} repositories</text>
     
@@ -219,7 +219,7 @@ export function generateLanguagesCard(stats: GitHubStats): string {
 
   topLanguages.forEach((lang, index) => {
     const barWidth = ((lang.percentage / 100) * maxBarWidth).toFixed(2);
-    const delay = 0.1 + index * 0.08;
+    const delay = 0.2 + index * 0.16;
 
     // Create unique animation for each bar with pixel values
     styleRules += `
@@ -228,7 +228,7 @@ export function generateLanguagesCard(stats: GitHubStats): string {
       to { width: ${barWidth}px; }
     }
     .bar-${index} {
-      animation: grow-bar-${index} 1s ease-out ${delay}s forwards;
+      animation: grow-bar-${index} 2s ease-out ${delay}s forwards;
       width: 0;
     }`;
 
@@ -255,7 +255,7 @@ export function generateLanguagesCard(stats: GitHubStats): string {
     .lang-name { font: 500 15px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${THEME.text}; }
     .lang-percent { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${THEME.textSecondary}; }
     
-    .fade-in { animation: fadeIn 0.8s ease-out; }
+    .fade-in { animation: fadeIn 1.6s ease-out; }
     
     @keyframes fadeIn {
       from { opacity: 0; }

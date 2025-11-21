@@ -59,7 +59,7 @@ export class GitHubAPIClient {
       this.fetchUserInfo(),
     ]);
 
-    const languages = this.calculateLanguageStats(repos);
+    const languages = await this.calculateLanguageStats(repos);
     const contributionGraph = this.parseContributionGraph(userContributions);
     const streak = this.calculateStreak(contributionGraph);
     const topRepos = this.getTopRepositories(repos);
@@ -241,15 +241,44 @@ export class GitHubAPIClient {
     return data as OctokitUser;
   }
 
-  private calculateLanguageStats(repos: OctokitRepository[]): LanguageStats[] {
+  private async calculateLanguageStats(
+    repos: OctokitRepository[],
+  ): Promise<LanguageStats[]> {
     const languageBytes: Record<string, number> = {};
 
+    console.log('  Fetching language breakdown for repositories...');
+    let processedCount = 0;
+
+    // Fetch actual language breakdown for each repository
     for (const repo of repos) {
-      if (repo.language) {
-        languageBytes[repo.language] =
-          (languageBytes[repo.language] || 0) + (repo.size || 0);
+      try {
+        const { data: languages } = await this.octokit.repos.listLanguages({
+          owner: repo.owner.login,
+          repo: repo.name,
+        });
+
+        // Sum up bytes for each language across all repos
+        for (const [lang, bytes] of Object.entries(languages)) {
+          languageBytes[lang] = (languageBytes[lang] || 0) + bytes;
+        }
+
+        processedCount++;
+        if (processedCount % 10 === 0) {
+          console.log(
+            `    Processed ${processedCount}/${repos.length} repositories...`,
+          );
+        }
+      } catch (error) {
+        // Skip repos we can't access (private repos without access, deleted repos, etc.)
+        if (error instanceof Error && !error.message.includes('404')) {
+          console.log(
+            `    ⚠️  Could not fetch languages for ${repo.full_name}`,
+          );
+        }
       }
     }
+
+    console.log(`    ✅ Processed ${processedCount} repositories`);
 
     const totalBytes = Object.values(languageBytes).reduce(
       (sum, bytes) => sum + bytes,
