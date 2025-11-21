@@ -93,7 +93,7 @@
       <rect y="0" width="666.16" height="20" rx="10" fill="#3178c6" class="bar-0"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">TypeScript</text>
+      <text y="15" x="10" class="lang-name">TypeScript (649k lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">98.0%</text>
     </g>
     <g transform="translate(50, 105)">
@@ -104,7 +104,7 @@
       <rect y="0" width="4.12" height="20" rx="10" fill="#dea584" class="bar-1"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Rust</text>
+      <text y="15" x="10" class="lang-name">Rust (4k lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.6%</text>
     </g>
     <g transform="translate(50, 135)">
@@ -115,7 +115,7 @@
       <rect y="0" width="3.06" height="20" rx="10" fill="#3572A5" class="bar-2"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Python</text>
+      <text y="15" x="10" class="lang-name">Python (3k lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.4%</text>
     </g>
     <g transform="translate(50, 165)">
@@ -126,7 +126,7 @@
       <rect y="0" width="2.58" height="20" rx="10" fill="#f1e05a" class="bar-3"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">JavaScript</text>
+      <text y="15" x="10" class="lang-name">JavaScript (3k lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.4%</text>
     </g>
     <g transform="translate(50, 195)">
@@ -137,7 +137,7 @@
       <rect y="0" width="1.03" height="20" rx="10" fill="#00B4AB" class="bar-4"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Dart</text>
+      <text y="15" x="10" class="lang-name">Dart (1k lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.2%</text>
     </g>
     <g transform="translate(50, 225)">
@@ -148,7 +148,7 @@
       <rect y="0" width="0.82" height="20" rx="10" fill="#00ADD8" class="bar-5"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Go</text>
+      <text y="15" x="10" class="lang-name">Go (803 lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
     </g>
     <g transform="translate(50, 255)">
@@ -159,7 +159,7 @@
       <rect y="0" width="0.56" height="20" rx="10" fill="#e34c26" class="bar-6"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">HTML</text>
+      <text y="15" x="10" class="lang-name">HTML (541 lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
     </g>
     <g transform="translate(50, 285)">
@@ -170,7 +170,7 @@
       <rect y="0" width="0.39" height="20" rx="10" fill="#555555" class="bar-7"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">C</text>
+      <text y="15" x="10" class="lang-name">C (381 lines)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
     </g>
 </svg>

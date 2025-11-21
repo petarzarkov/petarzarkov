@@ -204,6 +204,20 @@ export function generateStatsOverviewCard(stats: GitHubStats): string {
 </svg>`.trim();
 }
 
+function formatLinesOfCode(bytes: number): string {
+  // Estimate lines of code: average ~70 characters per line
+  // Most code characters are 1 byte in UTF-8
+  const estimatedLines = Math.round(bytes / 70);
+
+  if (estimatedLines >= 1000000) {
+    return `${(estimatedLines / 1000000).toFixed(1)}M`;
+  } else if (estimatedLines >= 1000) {
+    return `${(estimatedLines / 1000).toFixed(0)}k`;
+  } else {
+    return estimatedLines.toLocaleString();
+  }
+}
+
 export function generateLanguagesCard(stats: GitHubStats): string {
   const width = 800;
   const height = 320;
@@ -220,6 +234,7 @@ export function generateLanguagesCard(stats: GitHubStats): string {
   topLanguages.forEach((lang, index) => {
     const barWidth = ((lang.percentage / 100) * maxBarWidth).toFixed(2);
     const delay = 0.2 + index * 0.16;
+    const linesOfCode = formatLinesOfCode(lang.size);
 
     // Create unique animation for each bar with pixel values
     styleRules += `
@@ -241,7 +256,7 @@ export function generateLanguagesCard(stats: GitHubStats): string {
       <rect y="0" width="${barWidth}" height="${barHeight}" rx="10" fill="${lang.color}" class="bar-${index}"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">${lang.name}</text>
+      <text y="15" x="10" class="lang-name">${lang.name} (${linesOfCode} lines)</text>
       <text y="15" x="${maxBarWidth}" text-anchor="end" class="lang-percent">${lang.percentage.toFixed(1)}%</text>
     </g>`;
 
