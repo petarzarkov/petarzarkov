@@ -40,9 +40,9 @@ export function generateIndexHTML(stats: GitHubStats): string {
     
     header {
       text-align: center;
-      padding: 40px 0;
+      padding: 20px 0;
       border-bottom: 1px solid #30363d;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     
     h1 {
@@ -53,8 +53,8 @@ export function generateIndexHTML(stats: GitHubStats): string {
     
     h2 {
       font-size: 1.8em;
-      margin: 30px 0 20px 0;
       color: #c9d1d9;
+      text-align: center;
     }
     
     .subtitle {
@@ -80,7 +80,6 @@ export function generateIndexHTML(stats: GitHubStats): string {
     
     .stats-container img {
       width: 100%;
-      max-width: 800px;
       border-radius: 6px;
     }
     
@@ -128,7 +127,6 @@ export function generateIndexHTML(stats: GitHubStats): string {
       text-align: center;
       color: #8b949e;
       font-size: 0.9em;
-      margin: 20px 0;
     }
     
     @media (max-width: 768px) {
@@ -155,14 +153,13 @@ export function generateIndexHTML(stats: GitHubStats): string {
     
     <main>
       <section class="section">
-        <h2>📬 Connect with Me</h2>
+        <h2>📬 Connect with me</h2>
         <div class="connect">
           ${socialLinksHTML}
         </div>
       </section>
-      
+
       <section class="section">
-        <h2>📊 GitHub Statistics</h2>
         <p class="updated">Last updated: ${new Date().toLocaleString('en-US', {
           dateStyle: 'long',
           timeStyle: 'short',
@@ -173,6 +170,7 @@ export function generateIndexHTML(stats: GitHubStats): string {
           <img src="generated/languages.svg" alt="Top Languages" />
         </div>
       </section>
+
     </main>
     
     <footer>

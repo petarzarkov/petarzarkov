@@ -20,7 +20,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'YouTube',
-    url: 'https://www.youtube.com/@RealFlaery',
+    url: 'https://www.youtube.com/@RustBeats',
     icon: 'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg',
     height: 30,
   },
@@ -34,6 +34,12 @@ const socialLinks: SocialLink[] = [
     name: 'Email',
     url: 'mailto:pzarko1@gmail.com',
     icon: 'https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white',
+    height: 30,
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/petarzarkov',
+    icon: 'https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg',
     height: 30,
   },
 ];

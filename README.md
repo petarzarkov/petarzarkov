@@ -18,7 +18,7 @@ Check out the auto generated github pages as well
   <a href="https://twitter.com/flaeryw" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="twitter" height="30" width="40" />
   </a>
-  <a href="https://www.youtube.com/@RealFlaery" target="_blank">
+  <a href="https://www.youtube.com/@RustBeats" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="youtube" height="30" width="40" />
   </a>
   <a href="http://petarzarkov.com/" target="_blank">
@@ -26,6 +26,9 @@ Check out the auto generated github pages as well
   </a>
   <a href="mailto:pzarko1@gmail.com" target="_blank">
     <img align="center" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="email" height="30"  />
+  </a>
+  <a href="https://github.com/petarzarkov" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="github" height="30"  />
   </a>
 </p>
 

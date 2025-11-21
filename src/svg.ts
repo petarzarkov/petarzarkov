@@ -26,12 +26,12 @@ const ENHANCED_ANIMATIONS = `
   }
   
   @keyframes slideInLeft {
-    from { transform: translateX(-20px); opacity: 0; }
+    from { transform: translateX(-5px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
   }
   
   @keyframes slideInUp {
-    from { transform: translateY(20px); opacity: 0; }
+    from { transform: translateY(5px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
   }
   
@@ -51,9 +51,9 @@ const ENHANCED_ANIMATIONS = `
     100% { transform: scale(1); opacity: 1; }
   }
   
-  .fade-in { animation: fadeIn 1.6s ease-out; }
-  .slide-in-left { animation: slideInLeft 1.6s ease-out; }
-  .slide-in-up { animation: slideInUp 1.6s ease-out; }
+  .fade-in { animation: fadeIn 1.2s ease-out; }
+  .slide-in-left { animation: slideInLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
+  .slide-in-up { animation: slideInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
   .grow-bar { animation: growBar 2.4s cubic-bezier(0.4, 0, 0.2, 1); }
   .pulse { animation: pulse 3s ease-in-out infinite; }
   .pop-in { animation: popIn 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -226,19 +226,85 @@ export function generateLanguagesCard(stats: GitHubStats): string {
   const headerHeight = 75;
   const bottomPadding = 25;
 
+  // Filter languages: keep those with >= 100 lines, combine others
+  const mainLanguages: typeof stats.languages = [];
+  const otherLanguageNames: string[] = [];
+  let otherTotalSize = 0;
+  let otherTotalPercentage = 0;
+
+  stats.languages.forEach(lang => {
+    const linesOfCode = Math.round(lang.size / 70);
+    if (linesOfCode >= 100) {
+      mainLanguages.push(lang);
+    } else {
+      otherLanguageNames.push(lang.name);
+      otherTotalSize += lang.size;
+      otherTotalPercentage += lang.percentage;
+    }
+  });
+
+  // Add "Other" entry if there are languages under 100 lines
+  const languagesToDisplay = [...mainLanguages];
+  if (otherTotalSize > 0) {
+    // Format "Other" name with language list
+    // Text area is roughly 650px wide (from x=10 to x=680 minus padding)
+    // With 15px font, average char width ~9px, so ~70 chars max
+    // Reserve space for "Other (", ")", and percentage text
+    const prefix = 'Other (';
+    const suffix = ')';
+    const maxLangChars = 50; // Max chars for language list itself
+    const langList = otherLanguageNames.join(', ');
+
+    let otherName: string;
+    if (langList.length <= maxLangChars) {
+      otherName = `${prefix}${langList}${suffix}`;
+    } else {
+      // Truncate to fit, trying to break at a comma
+      const truncated: string[] = [];
+      let currentLength = 0;
+      for (const lang of otherLanguageNames) {
+        const addition = truncated.length > 0 ? `, ${lang}` : lang;
+        const testLength = currentLength + addition.length;
+
+        if (testLength > maxLangChars) {
+          break;
+        }
+        truncated.push(lang);
+        currentLength = testLength;
+      }
+
+      const remainingCount = otherLanguageNames.length - truncated.length;
+      const truncatedList = truncated.join(', ');
+      const moreText = remainingCount > 0 ? `, +${remainingCount} more` : '';
+      otherName = `${prefix}${truncatedList}${moreText}${suffix}`;
+    }
+
+    languagesToDisplay.push({
+      name: otherName,
+      color: '#858585',
+      percentage: otherTotalPercentage,
+      size: otherTotalSize,
+    });
+  }
+
   // Calculate dynamic height based on number of languages
-  const allLanguages = stats.languages;
   const height =
-    headerHeight + allLanguages.length * barSpacing + bottomPadding;
+    headerHeight + languagesToDisplay.length * barSpacing + bottomPadding;
 
   let languagesSVG = '';
   let styleRules = '';
   let yOffset = headerHeight;
 
-  allLanguages.forEach((lang, index) => {
+  languagesToDisplay.forEach((lang, index) => {
     const barWidth = ((lang.percentage / 100) * maxBarWidth).toFixed(2);
     const delay = 0.2 + index * 0.16;
     const linesOfCode = formatLinesOfCode(lang.size);
+
+    // For "Other" entry, don't show line count since we show language names
+    const isOther = lang.name.startsWith('Other (');
+    const displayText = isOther
+      ? lang.name
+      : `${lang.name} (${linesOfCode} lines)`;
 
     // Create unique animation for each bar with pixel values
     styleRules += `
@@ -260,7 +326,7 @@ export function generateLanguagesCard(stats: GitHubStats): string {
       <rect y="0" width="${barWidth}" height="${barHeight}" rx="10" fill="${lang.color}" class="bar-${index}"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">${lang.name} (${linesOfCode} lines)</text>
+      <text y="15" x="10" class="lang-name">${displayText}</text>
       <text y="15" x="${maxBarWidth}" text-anchor="end" class="lang-percent">${lang.percentage.toFixed(1)}%</text>
     </g>`;
 
