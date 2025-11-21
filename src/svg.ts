@@ -220,18 +220,22 @@ function formatLinesOfCode(bytes: number): string {
 
 export function generateLanguagesCard(stats: GitHubStats): string {
   const width = 800;
-  const height = 320;
-  const maxBars = 8;
-  const topLanguages = stats.languages.slice(0, maxBars);
-
-  let languagesSVG = '';
-  let styleRules = '';
-  let yOffset = 75;
   const barHeight = 20;
   const barSpacing = 30;
   const maxBarWidth = 680;
+  const headerHeight = 75;
+  const bottomPadding = 25;
 
-  topLanguages.forEach((lang, index) => {
+  // Calculate dynamic height based on number of languages
+  const allLanguages = stats.languages;
+  const height =
+    headerHeight + allLanguages.length * barSpacing + bottomPadding;
+
+  let languagesSVG = '';
+  let styleRules = '';
+  let yOffset = headerHeight;
+
+  allLanguages.forEach((lang, index) => {
     const barWidth = ((lang.percentage / 100) * maxBarWidth).toFixed(2);
     const delay = 0.2 + index * 0.16;
     const linesOfCode = formatLinesOfCode(lang.size);

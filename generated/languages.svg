@@ -1,4 +1,4 @@
-<svg width="800" height="320" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .header { font: 600 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
     .lang-name { font: 500 15px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
@@ -14,7 +14,7 @@
     
     @keyframes grow-bar-0 {
       from { width: 0px; }
-      to { width: 666.16px; }
+      to { width: 598.34px; }
     }
     .bar-0 {
       animation: grow-bar-0 2s ease-out 0.2s forwards;
@@ -22,7 +22,7 @@
     }
     @keyframes grow-bar-1 {
       from { width: 0px; }
-      to { width: 4.12px; }
+      to { width: 30.33px; }
     }
     .bar-1 {
       animation: grow-bar-1 2s ease-out 0.36s forwards;
@@ -30,7 +30,7 @@
     }
     @keyframes grow-bar-2 {
       from { width: 0px; }
-      to { width: 3.06px; }
+      to { width: 18.13px; }
     }
     .bar-2 {
       animation: grow-bar-2 2s ease-out 0.52s forwards;
@@ -38,7 +38,7 @@
     }
     @keyframes grow-bar-3 {
       from { width: 0px; }
-      to { width: 2.58px; }
+      to { width: 14.42px; }
     }
     .bar-3 {
       animation: grow-bar-3 2s ease-out 0.6799999999999999s forwards;
@@ -46,7 +46,7 @@
     }
     @keyframes grow-bar-4 {
       from { width: 0px; }
-      to { width: 1.03px; }
+      to { width: 10.69px; }
     }
     .bar-4 {
       animation: grow-bar-4 2s ease-out 0.8400000000000001s forwards;
@@ -54,7 +54,7 @@
     }
     @keyframes grow-bar-5 {
       from { width: 0px; }
-      to { width: 0.82px; }
+      to { width: 2.96px; }
     }
     .bar-5 {
       animation: grow-bar-5 2s ease-out 1s forwards;
@@ -62,7 +62,7 @@
     }
     @keyframes grow-bar-6 {
       from { width: 0px; }
-      to { width: 0.56px; }
+      to { width: 1.12px; }
     }
     .bar-6 {
       animation: grow-bar-6 2s ease-out 1.16s forwards;
@@ -70,15 +70,191 @@
     }
     @keyframes grow-bar-7 {
       from { width: 0px; }
-      to { width: 0.39px; }
+      to { width: 0.74px; }
     }
     .bar-7 {
       animation: grow-bar-7 2s ease-out 1.32s forwards;
       width: 0;
     }
+    @keyframes grow-bar-8 {
+      from { width: 0px; }
+      to { width: 0.59px; }
+    }
+    .bar-8 {
+      animation: grow-bar-8 2s ease-out 1.48s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-9 {
+      from { width: 0px; }
+      to { width: 0.58px; }
+    }
+    .bar-9 {
+      animation: grow-bar-9 2s ease-out 1.64s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-10 {
+      from { width: 0px; }
+      to { width: 0.56px; }
+    }
+    .bar-10 {
+      animation: grow-bar-10 2s ease-out 1.8s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-11 {
+      from { width: 0px; }
+      to { width: 0.30px; }
+    }
+    .bar-11 {
+      animation: grow-bar-11 2s ease-out 1.96s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-12 {
+      from { width: 0px; }
+      to { width: 0.29px; }
+    }
+    .bar-12 {
+      animation: grow-bar-12 2s ease-out 2.12s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-13 {
+      from { width: 0px; }
+      to { width: 0.28px; }
+    }
+    .bar-13 {
+      animation: grow-bar-13 2s ease-out 2.2800000000000002s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-14 {
+      from { width: 0px; }
+      to { width: 0.17px; }
+    }
+    .bar-14 {
+      animation: grow-bar-14 2s ease-out 2.4400000000000004s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-15 {
+      from { width: 0px; }
+      to { width: 0.11px; }
+    }
+    .bar-15 {
+      animation: grow-bar-15 2s ease-out 2.6s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-16 {
+      from { width: 0px; }
+      to { width: 0.09px; }
+    }
+    .bar-16 {
+      animation: grow-bar-16 2s ease-out 2.7600000000000002s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-17 {
+      from { width: 0px; }
+      to { width: 0.06px; }
+    }
+    .bar-17 {
+      animation: grow-bar-17 2s ease-out 2.9200000000000004s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-18 {
+      from { width: 0px; }
+      to { width: 0.04px; }
+    }
+    .bar-18 {
+      animation: grow-bar-18 2s ease-out 3.08s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-19 {
+      from { width: 0px; }
+      to { width: 0.04px; }
+    }
+    .bar-19 {
+      animation: grow-bar-19 2s ease-out 3.24s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-20 {
+      from { width: 0px; }
+      to { width: 0.04px; }
+    }
+    .bar-20 {
+      animation: grow-bar-20 2s ease-out 3.4000000000000004s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-21 {
+      from { width: 0px; }
+      to { width: 0.03px; }
+    }
+    .bar-21 {
+      animation: grow-bar-21 2s ease-out 3.56s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-22 {
+      from { width: 0px; }
+      to { width: 0.02px; }
+    }
+    .bar-22 {
+      animation: grow-bar-22 2s ease-out 3.72s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-23 {
+      from { width: 0px; }
+      to { width: 0.02px; }
+    }
+    .bar-23 {
+      animation: grow-bar-23 2s ease-out 3.8800000000000003s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-24 {
+      from { width: 0px; }
+      to { width: 0.02px; }
+    }
+    .bar-24 {
+      animation: grow-bar-24 2s ease-out 4.04s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-25 {
+      from { width: 0px; }
+      to { width: 0.01px; }
+    }
+    .bar-25 {
+      animation: grow-bar-25 2s ease-out 4.2s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-26 {
+      from { width: 0px; }
+      to { width: 0.00px; }
+    }
+    .bar-26 {
+      animation: grow-bar-26 2s ease-out 4.36s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-27 {
+      from { width: 0px; }
+      to { width: 0.00px; }
+    }
+    .bar-27 {
+      animation: grow-bar-27 2s ease-out 4.5200000000000005s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-28 {
+      from { width: 0px; }
+      to { width: 0.00px; }
+    }
+    .bar-28 {
+      animation: grow-bar-28 2s ease-out 4.680000000000001s forwards;
+      width: 0;
+    }
+    @keyframes grow-bar-29 {
+      from { width: 0px; }
+      to { width: 0.00px; }
+    }
+    .bar-29 {
+      animation: grow-bar-29 2s ease-out 4.84s forwards;
+      width: 0;
+    }
   </style>
   
-  <rect x="0.5" y="0.5" width="799" height="319" rx="4.5" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="799" height="999" rx="4.5" fill="#0d1117" stroke="#30363d"/>
   
   <g class="fade-in">
     <text x="25" y="35" class="header">💻 Top Languages</text>
@@ -90,87 +266,329 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="666.16" height="20" rx="10" fill="#3178c6" class="bar-0"/>
+      <rect y="0" width="598.34" height="20" rx="10" fill="#3178c6" class="bar-0"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">TypeScript (649k lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">98.0%</text>
+      <text y="15" x="10" class="lang-name">TypeScript (811k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">88.0%</text>
     </g>
     <g transform="translate(50, 105)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="4.12" height="20" rx="10" fill="#dea584" class="bar-1"/>
+      <rect y="0" width="30.33" height="20" rx="10" fill="#3572A5" class="bar-1"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Rust (4k lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.6%</text>
+      <text y="15" x="10" class="lang-name">Python (41k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">4.5%</text>
     </g>
     <g transform="translate(50, 135)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="3.06" height="20" rx="10" fill="#3572A5" class="bar-2"/>
+      <rect y="0" width="18.13" height="20" rx="10" fill="#f1e05a" class="bar-2"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Python (3k lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.4%</text>
+      <text y="15" x="10" class="lang-name">JavaScript (25k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">2.7%</text>
     </g>
     <g transform="translate(50, 165)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="2.58" height="20" rx="10" fill="#f1e05a" class="bar-3"/>
+      <rect y="0" width="14.42" height="20" rx="10" fill="#e34c26" class="bar-3"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">JavaScript (3k lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.4%</text>
+      <text y="15" x="10" class="lang-name">HTML (20k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">2.1%</text>
     </g>
     <g transform="translate(50, 195)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="1.03" height="20" rx="10" fill="#00B4AB" class="bar-4"/>
+      <rect y="0" width="10.69" height="20" rx="10" fill="#858585" class="bar-4"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Dart (1k lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.2%</text>
+      <text y="15" x="10" class="lang-name">HCL (14k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">1.6%</text>
     </g>
     <g transform="translate(50, 225)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.82" height="20" rx="10" fill="#00ADD8" class="bar-5"/>
+      <rect y="0" width="2.96" height="20" rx="10" fill="#dea584" class="bar-5"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">Go (803 lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+      <text y="15" x="10" class="lang-name">Rust (4k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.4%</text>
     </g>
     <g transform="translate(50, 255)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.56" height="20" rx="10" fill="#e34c26" class="bar-6"/>
+      <rect y="0" width="1.12" height="20" rx="10" fill="#858585" class="bar-6"/>
       
       <!-- Text labels positioned on top of bars -->
-      <text y="15" x="10" class="lang-name">HTML (541 lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+      <text y="15" x="10" class="lang-name">Clojure (2k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.2%</text>
     </g>
     <g transform="translate(50, 285)">
       <!-- Background bar -->
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="0.39" height="20" rx="10" fill="#555555" class="bar-7"/>
+      <rect y="0" width="0.74" height="20" rx="10" fill="#00B4AB" class="bar-7"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Dart (1k lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+    </g>
+    <g transform="translate(50, 315)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.59" height="20" rx="10" fill="#00ADD8" class="bar-8"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Go (803 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+    </g>
+    <g transform="translate(50, 345)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.58" height="20" rx="10" fill="#563d7c" class="bar-9"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">CSS (784 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+    </g>
+    <g transform="translate(50, 375)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.56" height="20" rx="10" fill="#89e051" class="bar-10"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Shell (752 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+    </g>
+    <g transform="translate(50, 405)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.30" height="20" rx="10" fill="#b07219" class="bar-11"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Java (412 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 435)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.29" height="20" rx="10" fill="#858585" class="bar-12"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Gherkin (396 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 465)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.28" height="20" rx="10" fill="#555555" class="bar-13"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">C (381 lines)</text>
-      <text y="15" x="680" text-anchor="end" class="lang-percent">0.1%</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 495)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.17" height="20" rx="10" fill="#858585" class="bar-14"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Dockerfile (237 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 525)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.11" height="20" rx="10" fill="#858585" class="bar-15"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Objective-C (148 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 555)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.09" height="20" rx="10" fill="#AA6746" class="bar-16"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Solidity (119 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 585)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.06" height="20" rx="10" fill="#f34b7d" class="bar-17"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">C++ (86 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 615)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.04" height="20" rx="10" fill="#858585" class="bar-18"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Makefile (59 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 645)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.04" height="20" rx="10" fill="#858585" class="bar-19"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Groovy (52 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 675)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.04" height="20" rx="10" fill="#701516" class="bar-20"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Ruby (49 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 705)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.03" height="20" rx="10" fill="#858585" class="bar-21"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Starlark (36 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 735)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.02" height="20" rx="10" fill="#858585" class="bar-22"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Cuda (28 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 765)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.02" height="20" rx="10" fill="#858585" class="bar-23"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">PLpgSQL (22 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 795)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.02" height="20" rx="10" fill="#178600" class="bar-24"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">C# (22 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 825)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.01" height="20" rx="10" fill="#858585" class="bar-25"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Lua (15 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 855)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.00" height="20" rx="10" fill="#858585" class="bar-26"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Julia (6 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 885)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.00" height="20" rx="10" fill="#858585" class="bar-27"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Perl (5 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 915)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.00" height="20" rx="10" fill="#4F5D95" class="bar-28"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">PHP (4 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
+    </g>
+    <g transform="translate(50, 945)">
+      <!-- Background bar -->
+      <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
+      
+      <!-- Progress bar -->
+      <rect y="0" width="0.00" height="20" rx="10" fill="#858585" class="bar-29"/>
+      
+      <!-- Text labels positioned on top of bars -->
+      <text y="15" x="10" class="lang-name">Assembly (3 lines)</text>
+      <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
     </g>
 </svg>

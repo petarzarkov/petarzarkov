@@ -28,6 +28,7 @@ const LANGUAGE_COLORS: Record<string, string> = {
   CSS: '#563d7c',
   Shell: '#89e051',
   Dart: '#00B4AB',
+  Solidity: '#AA6746',
 };
 
 export class GitHubAPIClient {
@@ -222,13 +223,34 @@ export class GitHubAPIClient {
   private async fetchRepositories() {
     console.log('  Fetching repositories...');
 
-    const repos = await this.octokit.paginate(this.octokit.repos.listForUser, {
-      username: this.username,
-      per_page: 100,
-      type: 'owner',
-    });
+    try {
+      // Get user's own repos (public + private) - only repos they own
+      console.log('    Fetching user repos (including private repos)...');
+      const repos = await this.octokit.paginate(
+        this.octokit.repos.listForAuthenticatedUser,
+        {
+          per_page: 100,
+          affiliation: 'owner', // Only repos owned by the user
+          sort: 'updated',
+        },
+      );
 
-    return repos;
+      console.log(`    ✅ Found ${repos.length} repositories`);
+      return repos;
+    } catch (err) {
+      console.error('    ⚠️  Error fetching repos:', err);
+      // Fallback to public repos only if authenticated endpoint fails
+      console.log('    Falling back to public repos only...');
+      const publicRepos = await this.octokit.paginate(
+        this.octokit.repos.listForUser,
+        {
+          username: this.username,
+          per_page: 100,
+          type: 'owner',
+        },
+      );
+      return publicRepos;
+    }
   }
 
   private async fetchUserInfo(): Promise<OctokitUser> {
@@ -285,15 +307,35 @@ export class GitHubAPIClient {
       0,
     );
 
-    const stats: LanguageStats[] = Object.entries(languageBytes)
+    // Debug: Log all languages found
+    const allLanguages = Object.entries(languageBytes)
       .map(([name, size]) => ({
         name,
-        color: LANGUAGE_COLORS[name] || '#858585',
-        percentage: (size / totalBytes) * 100,
         size,
+        percentage: (size / totalBytes) * 100,
       }))
-      .sort((a, b) => b.percentage - a.percentage)
-      .slice(0, 8); // Top 8 languages
+      .sort((a, b) => b.percentage - a.percentage);
+
+    console.log(`    📊 Languages found (${allLanguages.length} total):`);
+    allLanguages.slice(0, 15).forEach(lang => {
+      const linesEst = Math.round(lang.size / 70);
+      const linesFormatted =
+        linesEst >= 1000
+          ? `${(linesEst / 1000).toFixed(0)}k`
+          : linesEst.toString();
+      console.log(
+        `      - ${lang.name}: ${lang.percentage.toFixed(2)}% (~${linesFormatted} lines)`,
+      );
+    });
+
+    const stats: LanguageStats[] = allLanguages.map(
+      ({ name, size, percentage }) => ({
+        name,
+        color: LANGUAGE_COLORS[name] || '#858585',
+        percentage,
+        size,
+      }),
+    );
 
     return stats;
   }
