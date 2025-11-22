@@ -15,7 +15,7 @@
     
     @keyframes grow-bar-0 {
       from { width: 0px; }
-      to { width: 598.05px; }
+      to { width: 598.06px; }
     }
     .bar-0 {
       animation: grow-bar-0 2s ease-out 0.2s forwards;
@@ -212,7 +212,7 @@
       <rect y="0" width="680" height="20" rx="10" fill="#30363d" opacity="0.3"/>
       
       <!-- Progress bar -->
-      <rect y="0" width="598.05" height="20" rx="10" fill="#3178c6" class="bar-0"/>
+      <rect y="0" width="598.06" height="20" rx="10" fill="#3178c6" class="bar-0"/>
       
       <!-- Text labels positioned on top of bars -->
       <text y="15" x="10" class="lang-name">TypeScript (811k lines)</text>
