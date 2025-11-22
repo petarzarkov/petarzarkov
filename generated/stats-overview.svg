@@ -1,5 +1,6 @@
 <svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
+    
     .header { font: 600 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
     .subheader { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
     .stat-label { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
@@ -49,6 +50,7 @@
   </style>
   
   <rect x="0.5" y="0.5" width="799" height="479" rx="4.5" fill="#0d1117" stroke="#30363d"/>
+  
   
   <g class="fade-in">
     <text x="25" y="35" class="header">📊 GitHub Stats</text>
@@ -558,4 +560,5 @@
     <text y="45" class="stat-label">Network</text>
     <text y="65" class="stat-value-small">6 followers · 19 following</text>
   </g>
+    
 </svg>

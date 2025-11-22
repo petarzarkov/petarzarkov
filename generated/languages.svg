@@ -1,5 +1,6 @@
 <svg width="800" height="640" viewBox="0 0 800 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
+    
     .header { font: 600 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
     .lang-name { font: 500 15px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
     .lang-percent { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
@@ -156,9 +157,50 @@
       animation: grow-bar-17 2s ease-out 2.9200000000000004s forwards;
       width: 0;
     }
+    
+    
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-5px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slideInUp {
+    from { transform: translateY(5px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes growBar {
+    from { transform: scaleX(0); transform-origin: left; }
+    to { transform: scaleX(1); transform-origin: left; }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .fade-in { animation: fadeIn 1.2s ease-out; }
+  .slide-in-left { animation: slideInLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
+  .slide-in-up { animation: slideInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
+  .grow-bar { animation: growBar 2.4s cubic-bezier(0.4, 0, 0.2, 1); }
+  .pulse { animation: pulse 3s ease-in-out infinite; }
+  .pop-in { animation: popIn 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
   </style>
   
   <rect x="0.5" y="0.5" width="799" height="639" rx="4.5" fill="#0d1117" stroke="#30363d"/>
+  
   
   <g class="fade-in">
     <text x="25" y="35" class="header">💻 Top Languages</text>
@@ -363,4 +405,5 @@
       <text y="15" x="10" class="lang-name">Other (C++, Makefile, Groovy, Ruby, Starlark, Cuda, +7 more)</text>
       <text y="15" x="680" text-anchor="end" class="lang-percent">0.0%</text>
     </g>
+    
 </svg>

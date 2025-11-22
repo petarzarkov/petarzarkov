@@ -156,6 +156,7 @@ export interface OctokitRepository {
   forks_count?: number;
   description?: string | null;
   fork?: boolean;
+  default_branch?: string;
 }
 
 export interface OctokitUser {
