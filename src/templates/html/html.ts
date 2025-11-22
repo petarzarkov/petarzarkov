@@ -168,6 +168,7 @@ export function generateIndexHTML(stats: GitHubStats): string {
         <div class="stats-container">
           <img src="generated/stats-overview.svg" alt="GitHub Statistics Overview" />
           <img src="generated/languages.svg" alt="Top Languages" />
+          <img src="generated/productivity.svg" alt="Productivity & Commit Semantics" />
         </div>
       </section>
 

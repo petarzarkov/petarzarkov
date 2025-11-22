@@ -24,6 +24,9 @@ export interface GitHubStats {
     reviews: number;
     issues: number;
   };
+  commitData: CommitData[];
+  productivityStats: ProductivityStats;
+  repoActivity: RepoActivity[];
 }
 
 export interface StreakInfo {
@@ -165,4 +168,22 @@ export interface OctokitUser {
   total_private_repos?: number;
   followers: number;
   following: number;
+}
+
+export interface CommitData {
+  date: string; // ISO date string
+  hour: number; // 0-23
+  message: string;
+  repository: string; // repo full name
+}
+
+export interface ProductivityStats {
+  hourlyDistribution: number[]; // 24-element array
+  commitTypes: Record<string, number>; // feat, fix, docs, etc.
+}
+
+export interface RepoActivity {
+  name: string;
+  commits: number;
+  activityOverTime: number[]; // Daily commit counts for last 30 days
 }

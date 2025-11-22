@@ -1,7 +1,8 @@
 import type { LanguageStats, OctokitRepository } from '../types.js';
 import { GitHubClient } from '../core/GitHubClient.js';
 
-const LANGUAGE_COLORS: Record<string, string> = {
+// Fallback colors if API fetch fails
+const FALLBACK_LANGUAGE_COLORS: Record<string, string> = {
   TypeScript: '#3178c6',
   JavaScript: '#f1e05a',
   Python: '#3572A5',
@@ -25,9 +26,47 @@ const LANGUAGE_COLORS: Record<string, string> = {
  */
 export class LanguageService {
   #githubClient: GitHubClient;
+  #cachedColors: Record<string, string> | null = null;
 
   constructor(githubClient: GitHubClient) {
     this.#githubClient = githubClient;
+  }
+
+  /**
+   * Fetch language colors from GitHub's official colors JSON
+   */
+  async #fetchLanguageColors(): Promise<Record<string, string>> {
+    if (this.#cachedColors) {
+      return this.#cachedColors;
+    }
+
+    try {
+      const response = await fetch(
+        'https://raw.githubusercontent.com/ozh/github-colors/master/colors.json',
+      );
+      if (response.ok) {
+        const colors = (await response.json()) as Record<
+          string,
+          { color: string | null }
+        >;
+        // Transform to our format: language name -> color hex
+        const colorMap: Record<string, string> = {};
+        for (const [lang, data] of Object.entries(colors)) {
+          if (data.color) {
+            colorMap[lang] = data.color;
+          }
+        }
+        this.#cachedColors = colorMap;
+        return colorMap;
+      }
+    } catch {
+      // Fallback to local colors if fetch fails
+      console.warn('  ⚠️  Failed to fetch language colors, using fallback');
+    }
+
+    // Return fallback colors
+    this.#cachedColors = FALLBACK_LANGUAGE_COLORS;
+    return FALLBACK_LANGUAGE_COLORS;
   }
 
   /**
@@ -36,6 +75,8 @@ export class LanguageService {
   async calculateLanguageStats(
     repos: OctokitRepository[],
   ): Promise<LanguageStats[]> {
+    // Fetch official language colors
+    const languageColors = await this.#fetchLanguageColors();
     const languageBytes: Record<string, number> = {};
 
     console.log('  Fetching language breakdown for repositories...');
@@ -101,7 +142,8 @@ export class LanguageService {
     const stats: LanguageStats[] = allLanguages.map(
       ({ name, size, percentage }) => ({
         name,
-        color: LANGUAGE_COLORS[name] || '#858585',
+        color:
+          languageColors[name] || FALLBACK_LANGUAGE_COLORS[name] || '#858585',
         percentage,
         size,
       }),

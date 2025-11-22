@@ -40,6 +40,10 @@ Check out the auto generated github pages as well
 <p>
   <img src="generated/languages.svg" alt="Top Languages" width="100%" />
 </p>
+
+<p>
+  <img src="generated/productivity.svg" alt="Productivity & Commit Semantics" width="100%" />
+</p>
 <!-- STATS:END -->
 
 <h3 align="left">🛠️ Languages and Tools:</h3>

@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/rest';
 import { graphql } from '@octokit/graphql';
-import type { OctokitRepository, OctokitUser } from '../types.js';
+import type { OctokitRepository, OctokitUser, CommitData } from '../types.js';
 
 /**
  * Wraps Octokit and maintains connection state
@@ -187,5 +187,49 @@ export class GitHubClient {
       }
     }
     return null;
+  }
+
+  /**
+   * Fetch commits from a repository
+   */
+  async fetchCommits(
+    owner: string,
+    repo: string,
+    since: Date,
+    until: Date,
+  ): Promise<CommitData[]> {
+    try {
+      const commits = await this.#octokit.paginate(
+        this.#octokit.repos.listCommits,
+        {
+          owner,
+          repo,
+          author: this.#username,
+          since: since.toISOString(),
+          until: until.toISOString(),
+          per_page: 100,
+        },
+      );
+
+      return commits
+        .filter(commit => commit.commit.author?.date)
+        .map(commit => {
+          const authorDate = commit.commit.author?.date;
+          if (!authorDate) {
+            return null;
+          }
+          const commitDate = new Date(authorDate);
+          return {
+            date: commitDate.toISOString(),
+            hour: commitDate.getUTCHours(),
+            message: commit.commit.message || '',
+            repository: `${owner}/${repo}`,
+          };
+        })
+        .filter((commit): commit is CommitData => commit !== null);
+    } catch {
+      // Return empty array if fetch fails
+      return [];
+    }
   }
 }

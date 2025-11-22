@@ -4,6 +4,7 @@ import { GitHubClient } from './GitHubClient.js';
 import { StatsAggregator } from './StatsAggregator.js';
 import { StatsOverviewGenerator } from '../generators/StatsOverviewGenerator.js';
 import { LanguagesGenerator } from '../generators/LanguagesGenerator.js';
+import { ProductivitySemanticsGenerator } from '../generators/ProductivitySemanticsGenerator.js';
 import { FileUtils } from '../utils/FileUtils.js';
 import { generateHeader } from '../templates/readme/header.js';
 import { generateConnect } from '../templates/readme/connect.js';
@@ -77,9 +78,13 @@ export class StatsGenerator {
     // Generate SVG cards using generators
     const statsOverviewGenerator = new StatsOverviewGenerator(this.#stats);
     const languagesGenerator = new LanguagesGenerator(this.#stats);
+    const productivitySemanticsGenerator = new ProductivitySemanticsGenerator(
+      this.#stats,
+    );
 
     const statsOverview = statsOverviewGenerator.generate();
     const languagesCard = languagesGenerator.generate();
+    const productivitySemanticsCard = productivitySemanticsGenerator.generate();
 
     // Write SVG files
     await FileUtils.writeFile(
@@ -90,9 +95,14 @@ export class StatsGenerator {
       FileUtils.join(this.#config.generatedDir, PATHS.SVG.LANGUAGES),
       languagesCard,
     );
+    await FileUtils.writeFile(
+      FileUtils.join(this.#config.generatedDir, PATHS.SVG.PRODUCTIVITY),
+      productivitySemanticsCard,
+    );
 
     console.log(MESSAGES.SVG_STATS_OVERVIEW);
     console.log(MESSAGES.SVG_LANGUAGES);
+    console.log('  ✓ Generated productivity.svg');
     console.log(MESSAGES.SVG_GENERATED);
   }
 

@@ -7,6 +7,7 @@ import { GitHubClient } from './GitHubClient.js';
 import { LanguageService } from '../services/LanguageService.js';
 import { ContributionService } from '../services/ContributionService.js';
 import { RepositoryService } from '../services/RepositoryService.js';
+import { CommitService } from '../services/CommitService.js';
 import { DATE_RANGES } from '../constants/constants.js';
 import { MESSAGES } from '../constants/constants.js';
 
@@ -18,6 +19,7 @@ export class StatsAggregator {
   #languageService: LanguageService;
   #contributionService: ContributionService;
   #repositoryService: RepositoryService;
+  #commitService: CommitService;
 
   // Cache
   #cachedRepos: OctokitRepository[] | null = null;
@@ -29,6 +31,7 @@ export class StatsAggregator {
     this.#languageService = new LanguageService(githubClient);
     this.#contributionService = new ContributionService(githubClient);
     this.#repositoryService = new RepositoryService(githubClient);
+    this.#commitService = new CommitService(githubClient);
   }
 
   /**
@@ -55,14 +58,16 @@ export class StatsAggregator {
     this.#cachedUser = user;
 
     // Process data in parallel
-    const [languages, contributionGraph, streak, topRepos] = await Promise.all([
-      this.#languageService.calculateLanguageStats(repos),
-      this.#contributionService.parseContributionGraph(userContributions),
-      this.#contributionService.calculateStreak(
+    const [languages, contributionGraph, streak, topRepos, commitData] =
+      await Promise.all([
+        this.#languageService.calculateLanguageStats(repos),
         this.#contributionService.parseContributionGraph(userContributions),
-      ),
-      this.#repositoryService.getTopRepositories(repos),
-    ]);
+        this.#contributionService.calculateStreak(
+          this.#contributionService.parseContributionGraph(userContributions),
+        ),
+        this.#repositoryService.getTopRepositories(repos),
+        this.#commitService.fetchAllCommits(repos, oneYearAgo, today),
+      ]);
 
     // Calculate additional stats
     const totalForks = repos.reduce(
@@ -117,6 +122,19 @@ export class StatsAggregator {
           ) / 10
         : 0;
 
+    // Calculate productivity stats
+    const productivityStats = {
+      hourlyDistribution:
+        this.#commitService.calculateHourlyDistribution(commitData),
+      commitTypes: this.#commitService.parseCommitTypes(commitData),
+    };
+
+    // Calculate repository activity
+    const repoActivity = this.#commitService.calculateRepoActivity(
+      commitData,
+      30,
+    );
+
     return {
       username: this.#githubClient.user,
       userId: user.id,
@@ -141,6 +159,9 @@ export class StatsAggregator {
       topRepos,
       avgCommitsPerDay,
       contributionPercentages,
+      commitData,
+      productivityStats,
+      repoActivity,
     };
   }
 

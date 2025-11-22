@@ -34,6 +34,7 @@ export const PATHS = {
   SVG: {
     STATS_OVERVIEW: 'stats-overview.svg',
     LANGUAGES: 'languages.svg',
+    PRODUCTIVITY: 'productivity.svg',
   },
 } as const;
 
