@@ -38,7 +38,7 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
     const weeklyCadenceSVG = this.#generateWeeklyCadence();
     const productivitySVG = this.#generateProductivityRhythm();
 
-    // 2. Define Styles (Removed opacity: 0 defaults to fix disappearing elements)
+    // 2. Define Styles
     const styles = `
       .header { font: 600 20px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${this.theme.text}; }
       .subheader { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${this.theme.textSecondary}; }
@@ -52,7 +52,7 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
       .legend-key { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${this.theme.text}; }
       .legend-val { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${this.theme.textSecondary}; }
       
-      /* Animations - Only animating graphical elements (bars/slices), not text */
+      /* Animations */
       .bar-anim { 
         animation: scaleUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards; 
         stroke-dasharray: 200; 
@@ -61,7 +61,7 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
       }
       .slice-anim {
         animation: rotateIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-        transform-origin: 240px 200px;
+        transform-origin: 240px 170px; /* Updated transform origin to match new CY */
       }
       
       @keyframes scaleUp { to { stroke-dashoffset: 0; } }
@@ -113,7 +113,6 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
 
   /**
    * Generates the Radial Clock Chart (Right Side)
-   * (Unchanged logic, just robust rendering)
    */
   #generateProductivityRhythm(): string {
     const hours = this.#stats.productivityStats.hourlyDistribution;
@@ -181,13 +180,11 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
 
   /**
    * Generates the Weekly Cadence Donut Chart (Left Side)
-   * REPLACES: Commit Semantics
    */
   #generateWeeklyCadence(): string {
     // 1. Aggregate Data by Day of Week
     const days = [0, 0, 0, 0, 0, 0, 0]; // Sun to Sat
 
-    // Use contributionGraph for data
     this.#stats.contributionGraph.forEach(day => {
       const date = new Date(day.date);
       if (!isNaN(date.getTime())) {
@@ -197,9 +194,8 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
 
     const totalContributions = days.reduce((a, b) => a + b, 0);
 
-    // If no data, show placeholder
     if (totalContributions === 0) {
-      return `<text x="240" y="210" text-anchor="middle" class="chart-sub">No Data</text>`;
+      return `<text x="240" y="170" text-anchor="middle" class="chart-sub">No Data</text>`;
     }
 
     // 2. Find Busiest Day
@@ -208,18 +204,16 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
       if (count > days[maxDayIndex]) maxDayIndex = i;
     });
 
-    // 3. Geometry
+    // 3. Geometry (Updated CY to 170 to make room for legend)
     const cx = 240;
-    const cy = 210;
+    const cy = 170; // Moved UP from 210
     const r = 85;
     const width = 18;
 
     let pathsSVG = '';
     let currentAngle = -Math.PI / 2;
 
-    // We iterate 1 (Mon) -> 6 (Sat) -> 0 (Sun) to align with standard work week view
-    // Or just 0->6. Let's do 1 (Mon) start for "Work Week" feel.
-    const order = [1, 2, 3, 4, 5, 6, 0];
+    const order = [1, 2, 3, 4, 5, 6, 0]; // Mon -> Sun
 
     order.forEach((dayIndex, i) => {
       const count = days[dayIndex];
@@ -242,7 +236,6 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
 
       const d = `M ${x1} ${y1} L ${x2} ${y2} A ${r} ${r} 0 ${largeArc} 1 ${x3} ${y3} L ${x4} ${y4} A ${r - width} ${r - width} 0 ${largeArc} 0 ${x1} ${y1} Z`;
 
-      // Use color map
       const color = this.#dayColors[dayIndex];
 
       pathsSVG += `
@@ -255,13 +248,13 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
       currentAngle = endAngle;
     });
 
-    // 4. Legend (Static Grid)
-    // Show all 7 days in a neat grid
+    // 4. Legend (Static Grid) - Improved spacing
     let legendSVG = '';
     order.forEach((dayIndex, i) => {
       const row = Math.floor(i / 2);
       const col = i % 2;
-      const lx = 30 + col * 110;
+      // Increased column width from 110 to 125 to prevent overlap
+      const lx = 30 + col * 125;
       const ly = 280 + row * 20;
       const count = days[dayIndex];
       const percent = ((count / totalContributions) * 100).toFixed(0);
@@ -270,7 +263,7 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
         <g transform="translate(${lx}, ${ly})">
           <rect width="10" height="10" rx="3" fill="${this.#dayColors[dayIndex]}" />
           <text x="16" y="9" class="legend-key">${this.#dayNames[dayIndex]}</text>
-          <text x="95" y="9" text-anchor="end" class="legend-val">${percent}%</text>
+          <text x="105" y="9" text-anchor="end" class="legend-val">${percent}%</text>
         </g>
       `;
     });
@@ -281,7 +274,6 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
       <text x="${cx}" y="${cy + 15}" text-anchor="middle" class="chart-sub">Contributions</text>
     `;
 
-    // Calculate Avg/Day for the period
     const periodDays =
       Math.ceil(
         (new Date(this.#stats.periodEnd).getTime() -
@@ -290,8 +282,9 @@ export class ProductivitySemanticsGenerator extends SVGGenerator {
       ) || 1;
     const avg = (totalContributions / periodDays).toFixed(1);
 
+    // Aligned Side Stats closer to the new chart position
     const textStats = `
-      <g transform="translate(30, 120)">
+      <g transform="translate(30, 110)">
          <text class="chart-sub" y="0">Avg / Day</text>
          <text class="chart-value" y="25" font-size="20">${avg}</text>
          
