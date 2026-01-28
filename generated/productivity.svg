@@ -140,14 +140,14 @@
       <g transform="translate(20, 0)">
         
       
-        <path d="M 240 103 L 240 85 A 85 85 0 0 1 301.28412747610577 111.09961189013762 L 288.3063122458716 123.57263525457907 A 67 67 0 0 0 240 103 Z" fill="#fbbf24" stroke="#0d1117" stroke-width="2"
+        <path d="M 240 103 L 240 85 A 85 85 0 0 1 300.03656980312167 109.82849273721905 L 287.32294325657824 122.57069427521972 A 67 67 0 0 0 240 103 Z" fill="#fbbf24" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0s">
-          <title>Monday: 269</title>
+          <title>Monday: 262</title>
         </path>
       
-        <path d="M 288.3063122458716 123.57263525457907 L 301.28412747610577 111.09961189013762 A 85 85 0 0 1 324.00170341512063 182.98898854253508 L 306.21310739780097 180.2383792041159 A 67 67 0 0 0 288.3063122458716 123.57263525457907 Z" fill="#34d399" stroke="#0d1117" stroke-width="2"
+        <path d="M 287.32294325657824 122.57069427521972 L 300.03656980312167 109.82849273721905 A 85 85 0 0 1 324.00170341512063 182.98898854253508 L 306.21310739780097 180.2383792041159 A 67 67 0 0 0 287.32294325657824 122.57069427521972 Z" fill="#34d399" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.05s">
-          <title>Tuesday: 307</title>
+          <title>Tuesday: 314</title>
         </path>
       
         <path d="M 306.21310739780097 180.2383792041159 L 324.00170341512063 182.98898854253508 A 85 85 0 0 1 266.8827410801318 250.63695326597227 L 261.1899253219862 233.56089257435463 A 67 67 0 0 0 306.21310739780097 180.2383792041159 Z" fill="#60a5fa" stroke="#0d1117" stroke-width="2"
@@ -183,7 +183,7 @@
         <g transform="translate(30, 280)">
           <rect width="10" height="10" rx="3" fill="#fbbf24" />
           <text x="16" y="9" class="legend-key">Monday</text>
-          <text x="105" y="9" text-anchor="end" class="legend-val">13%</text>
+          <text x="105" y="9" text-anchor="end" class="legend-val">12%</text>
         </g>
       
         <g transform="translate(155, 280)">
