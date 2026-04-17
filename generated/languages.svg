@@ -14,7 +14,7 @@
       
         @keyframes slide-right-0 {
           from { width: 0; }
-          to { width: 377.60px; }
+          to { width: 377.63px; }
         }
         .bar-0 {
           animation: slide-right-0 1s cubic-bezier(0.2, 0, 0.2, 1) 0.2s forwards;
@@ -26,7 +26,7 @@
       
         @keyframes slide-right-1 {
           from { width: 0; }
-          to { width: 95.92px; }
+          to { width: 95.91px; }
         }
         .bar-1 {
           animation: slide-right-1 1s cubic-bezier(0.2, 0, 0.2, 1) 0.30000000000000004s forwards;
@@ -38,7 +38,7 @@
       
         @keyframes slide-right-2 {
           from { width: 0; }
-          to { width: 65.81px; }
+          to { width: 65.80px; }
         }
         .bar-2 {
           animation: slide-right-2 1s cubic-bezier(0.2, 0, 0.2, 1) 0.4s forwards;
@@ -62,7 +62,7 @@
       
         @keyframes slide-right-4 {
           from { width: 0; }
-          to { width: 35.23px; }
+          to { width: 35.22px; }
         }
         .bar-4 {
           animation: slide-right-4 1s cubic-bezier(0.2, 0, 0.2, 1) 0.6000000000000001s forwards;
