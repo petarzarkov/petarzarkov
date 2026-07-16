@@ -140,43 +140,43 @@
       <g transform="translate(20, 0)">
         
       
-        <path d="M 240 103 L 240 85 A 85 85 0 0 1 297.1278272378743 107.06025615654619 L 285.030169705148 120.3886724998658 A 67 67 0 0 0 240 103 Z" fill="#fbbf24" stroke="#0d1117" stroke-width="2"
+        <path d="M 240 103 L 240 85 A 85 85 0 0 1 297.40096485034974 107.30925718856957 L 285.2454664114521 120.58494390157838 A 67 67 0 0 0 240 103 Z" fill="#fbbf24" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0s">
           <title>Monday: 200</title>
         </path>
       
-        <path d="M 285.030169705148 120.3886724998658 L 297.1278272378743 107.06025615654619 A 85 85 0 0 1 324.9333101055377 173.36642755997568 L 306.9474326714238 172.6535370178632 A 67 67 0 0 0 285.030169705148 120.3886724998658 Z" fill="#34d399" stroke="#0d1117" stroke-width="2"
+        <path d="M 285.2454664114521 120.58494390157838 L 297.40096485034974 107.30925718856957 A 85 85 0 0 1 324.9938316255324 171.0240046926915 L 306.9951378695373 170.80715664012155 A 67 67 0 0 0 285.2454664114521 120.58494390157838 Z" fill="#34d399" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.05s">
-          <title>Tuesday: 237</title>
+          <title>Tuesday: 227</title>
         </path>
       
-        <path d="M 306.9474326714238 172.6535370178632 L 324.9333101055377 173.36642755997568 A 85 85 0 0 1 280.7017942515421 244.62147107036378 L 272.0825907629802 228.8192771966397 A 67 67 0 0 0 306.9474326714238 172.6535370178632 Z" fill="#60a5fa" stroke="#0d1117" stroke-width="2"
+        <path d="M 306.9951378695373 170.80715664012155 L 324.9938316255324 171.0240046926915 A 85 85 0 0 1 282.2951816620583 243.7300319284719 L 273.33855495715187 228.11661340244257 A 67 67 0 0 0 306.9951378695373 170.80715664012155 Z" fill="#60a5fa" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.1s">
           <title>Wednesday: 280</title>
         </path>
       
-        <path d="M 272.0825907629802 228.8192771966397 L 280.7017942515421 244.62147107036378 A 85 85 0 0 1 206.04848790268807 247.92493071094822 L 213.23821987623646 231.42318067804155 A 67 67 0 0 0 272.0825907629802 228.8192771966397 Z" fill="#818cf8" stroke="#0d1117" stroke-width="2"
+        <path d="M 273.33855495715187 228.11661340244257 L 282.2951816620583 243.7300319284719 A 85 85 0 0 1 207.30823448818686 248.46176436787937 L 214.2311965965708 231.8463319135049 A 67 67 0 0 0 273.33855495715187 228.11661340244257 Z" fill="#818cf8" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.15000000000000002s">
           <title>Thursday: 247</title>
         </path>
       
-        <path d="M 213.23821987623646 231.42318067804155 L 206.04848790268807 247.92493071094822 A 85 85 0 0 1 155.0666898944623 173.36642755997568 L 173.05256732857615 172.6535370178632 A 67 67 0 0 0 213.23821987623646 231.42318067804155 Z" fill="#a78bfa" stroke="#0d1117" stroke-width="2"
+        <path d="M 214.2311965965708 231.8463319135049 L 207.30823448818686 248.46176436787937 A 85 85 0 0 1 155.10250704360448 174.17321096025293 L 173.0807996696647 173.28947216866996 A 67 67 0 0 0 214.2311965965708 231.8463319135049 Z" fill="#a78bfa" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.2s">
           <title>Friday: 304</title>
         </path>
       
-        <path d="M 173.05256732857615 172.6535370178632 L 155.0666898944623 173.36642755997568 A 85 85 0 0 1 196.71126003224887 96.8488893317099 L 205.87828731953735 112.3397127673478 A 67 67 0 0 0 173.05256732857615 172.6535370178632 Z" fill="#fb7185" stroke="#0d1117" stroke-width="2"
+        <path d="M 173.0807996696647 173.28947216866996 L 155.10250704360448 174.17321096025293 A 85 85 0 0 1 196.48086733953775 96.98571994136292 L 205.69668366763565 112.44756748319195 A 67 67 0 0 0 173.0807996696647 173.28947216866996 Z" fill="#fb7185" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.25s">
           <title>Saturday: 292</title>
         </path>
       
-        <path d="M 205.87828731953735 112.3397127673478 L 196.71126003224887 96.8488893317099 A 85 85 0 0 1 239.99999999999997 85 L 240 103 A 67 67 0 0 0 205.87828731953735 112.3397127673478 Z" fill="#f472b6" stroke="#0d1117" stroke-width="2"
+        <path d="M 205.69668366763565 112.44756748319195 L 196.48086733953775 96.98571994136292 A 85 85 0 0 1 239.99999999999997 85 L 240 103 A 67 67 0 0 0 205.69668366763565 112.44756748319195 Z" fill="#f472b6" stroke="#0d1117" stroke-width="2"
               class="slice-anim" style="animation-delay: 0.30000000000000004s">
           <title>Sunday: 145</title>
         </path>
       
       
-      <text x="240" y="165" text-anchor="middle" class="chart-value">1,705</text>
+      <text x="240" y="165" text-anchor="middle" class="chart-value">1,695</text>
       <text x="240" y="185" text-anchor="middle" class="chart-sub">Contributions</text>
     
       
@@ -189,19 +189,19 @@
         <g transform="translate(155, 280)">
           <rect width="10" height="10" rx="3" fill="#34d399" />
           <text x="16" y="9" class="legend-key">Tuesday</text>
-          <text x="105" y="9" text-anchor="end" class="legend-val">14%</text>
+          <text x="105" y="9" text-anchor="end" class="legend-val">13%</text>
         </g>
       
         <g transform="translate(30, 300)">
           <rect width="10" height="10" rx="3" fill="#60a5fa" />
           <text x="16" y="9" class="legend-key">Wednesday</text>
-          <text x="105" y="9" text-anchor="end" class="legend-val">16%</text>
+          <text x="105" y="9" text-anchor="end" class="legend-val">17%</text>
         </g>
       
         <g transform="translate(155, 300)">
           <rect width="10" height="10" rx="3" fill="#818cf8" />
           <text x="16" y="9" class="legend-key">Thursday</text>
-          <text x="105" y="9" text-anchor="end" class="legend-val">14%</text>
+          <text x="105" y="9" text-anchor="end" class="legend-val">15%</text>
         </g>
       
         <g transform="translate(30, 320)">
@@ -225,7 +225,7 @@
       
       <g transform="translate(30, 110)">
          <text class="chart-sub" y="0">Avg / Day</text>
-         <text class="chart-value" y="25" font-size="20">4.7</text>
+         <text class="chart-value" y="25" font-size="20">4.6</text>
          
          <text class="chart-sub" y="60">Most Active</text>
          <text class="chart-value" y="85" font-size="20" fill="#a78bfa">Friday</text>
