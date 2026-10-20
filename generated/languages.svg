@@ -14,7 +14,7 @@
       
         @keyframes slide-right-0 {
           from { width: 0; }
-          to { width: 390.55px; }
+          to { width: 390.57px; }
         }
         .bar-0 {
           animation: slide-right-0 1s cubic-bezier(0.2, 0, 0.2, 1) 0.2s forwards;
@@ -86,7 +86,7 @@
       
         @keyframes slide-right-6 {
           from { width: 0; }
-          to { width: 25.60px; }
+          to { width: 25.59px; }
         }
         .bar-6 {
           animation: slide-right-6 1s cubic-bezier(0.2, 0, 0.2, 1) 0.8s forwards;
